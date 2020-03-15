@@ -57,18 +57,18 @@ class App extends React.Component {
     .then(this.handleResp)
   }
 
-    handleResp = (resp) => {
-      console.log(resp)
-      if (resp.user) {
-        localStorage.token = resp.token
-        this.setState(resp, () => {
-          this.props.history.push("/mygallery")
-        })
-      }
-      else {
-        alert(resp.error)
-      }
+  handleResp = (resp) => {
+    console.log(resp)
+    if (resp.user) {
+      localStorage.token = resp.token
+      this.setState(resp, () => {
+        this.props.history.push("/mygallery")
+      })
     }
+    else {
+      alert(resp.error)
+    }
+  }
 
   renderForm = (routerProps) => {
     if(routerProps.location.pathname === "/login"){
@@ -99,7 +99,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Hi from App</h1>
-        <NavBar/>
+        <NavBar currentUser={this.state}/>
         <Switch>
           <Route path="/login" render={ this.renderForm } />
           <Route path="/register" render={ this.renderForm } />
