@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
-import {withRouter} from 'react-router-dom';
-import MyImageCard from './MyImageCard'
+import MyImageCard from './MyImageCard';
+import { useHistory } from "react-router-dom";
+import { useSelector } from 'react-redux';
 
 
-class MyGallery extends Component {
+export default function MyGallery() {
 
-  componentDidMount() {
-    if(!this.props.token){
-      this.props.history.push("/login")
-    }
+  const {token, user} = useSelector(state => state.auth);
+
+  const history = useHistory();
+
+  
+  if(!token){
+    history.push("/login")
   }
-
-  render() {
-    let {user:{images, username}} = this.props
-   console.log(this.props)
-    return (
-      <div>
-        <h1>Hi from {username}'s Gallery</h1>
-        {/* {images.map(imageObj => <MyImageCard key={imageObj.id} image={imageObj} />)} */}
-      </div>
-    );
-  }
+ 
+  return (
+    <div>
+      <h1>Hi from {user.username}'s Gallery</h1>
+      {/* {images.map(imageObj => <MyImageCard key={imageObj.id} image={imageObj} />)} */}
+    </div>
+  );
+  
 }
-export default withRouter(MyGallery);

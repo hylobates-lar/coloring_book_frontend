@@ -1,41 +1,38 @@
-import React, { Component } from 'react';
-import {withRouter} from 'react-router-dom';
-import ImageCard from './ImageCard.js'
+import React, { useEffect } from 'react';
+import ImageCard from './ImageCard.js';
+import { useDispatch, useSelector } from 'react-redux';
 
 
-class ImageGallery extends Component {
-
-    state = {
-        images: [],
-      }
-    
-    componentDidMount() {
-    fetch("http://localhost:3000/images")
+export default function ImageGallery() {
+ 
+    const dispatch = useDispatch();
+    useEffect(() => {
+      fetch("http://localhost:3000/images")
         .then(r => r.json())
-        .then(imageData => {
-            this.setState({
-                images: imageData,
-            })
-        }) 
-    }
+        .then((resp) => {
+            dispatch({
+                type: 'SET_IMAGES',
+                payload: resp
+            });
+        })  
+    }, []);
 
+    const images = useSelector(state => state.image);
 
-    render() {
     
-        return (
-            <div id="image-gallery"> 
-            {/* <Row gutter={[48, 24]}> */}
-            <h1>Hi from Image Gallery</h1>
-                {this.state.images.map((image) => {
-                    return (
-                    // <Col span={8}>
-                        <ImageCard image={image} key={image.id} user={this.props.user} addOneImage={this.props.addOneImage}/>    
-                    // </Col>
-                    )
-                })}
-            {/* </Row> */}
-            </div>
-        )}
+    return (
+        <div id="image-gallery"> 
+        {/* <Row gutter={[48, 24]}> */}
+        <h1>Hi from Image Gallery</h1>
+            {images.map((image) => {
+                return (
+                // <Col span={8}>
+                    <ImageCard image={image} key={image.id} />    
+                // </Col>
+                )
+            })}
+        {/* </Row> */}
+        </div>
+    )
 }
 
-export default withRouter(ImageGallery);

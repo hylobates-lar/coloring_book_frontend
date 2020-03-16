@@ -1,20 +1,19 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom'
+import { useSelector } from 'react-redux';
 
-function NavBar(props) {
-  
-  
+
+function NavBar() {
+  const {token} = useSelector(state => state.auth);
+  console.log("token", token)
   return (
-    (!props.currentUser.token) ?
+    (!token) ?
       (<ul className="nav">
         <li>
           <NavLink to="/">Home</NavLink>
         </li>
         <li>
           <NavLink to="/login">Login</NavLink>
-        </li>
-        <li>
-          <NavLink to="/register">Register</NavLink>
         </li>
         <li>
           <NavLink to="/images">Image Gallery</NavLink>

@@ -1,38 +1,51 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useHistory } from "react-router-dom";
 
-class ImageCard extends React.Component {
 
-    colorImage = () => {
-        let image = this.props.image
-        let images = this.props.user.images
-        let newImage = {image_id: image.id, user_id: this.props.user.id, fill_colors: []}
-    
+export default function ImageCard(props) {
+
+    const {user, token} = useSelector(state => state.auth);
+    let image = props.image
+    const dispatch = useDispatch();
+    const history = useHistory();
+
+    const colorImage = () => { 
+        if(!token){
+            history.push("/login")
+            return
+        } 
+
+        let newImage = {image_id: image.id, user_id: user.id, fill_colors: []}
+
         fetch(`http://localhost:3000/user_images`, {
             method: 'POST',
             headers: {
                 'Content-Type':'application/json',
-                'Accept': 'application/json'
+                'Accept': 'application/json',
+                'Authorization': `bearer ${token}`
             },
             body: JSON.stringify(newImage)
         })
         .then(r => r.json())
-        .then((userData) => {
-            this.props.addOneImage(userData)
-        })    
+        .then((resp) => {
+            dispatch({
+                type: 'ADD_USER_IMAGE',
+                payload: resp
+            });
+            history.push(`/coloringpage/${resp.id}`)    
+        })
       }
 
-    render(){
-        let image = this.props.image
+   
         return(
             <div id="image-card">
-                <h1>Image Card</h1>
-                <p>{image.title}</p>
-                < img src={`http://localhost:3000${image.svg_url}`} />
-                <span onClick={this.colorImage}>Color Me!</span>
+                <h1>{image.title}</h1>
+                <img src={`http://localhost:3000${image.svg_url}`} />
+                <button onClick={colorImage}>Color Me!</button>
             </div>
         )
-    }
+    
 
 }
 
-export default ImageCard;
