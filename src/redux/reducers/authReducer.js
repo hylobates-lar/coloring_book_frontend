@@ -1,7 +1,6 @@
 export default (state = {}, { type, payload }) => {
     switch (type) {
       case 'SET_USER':
-        console.log(payload)
         localStorage.token = payload.token;
         return payload;
       case 'CLEAR_USER':

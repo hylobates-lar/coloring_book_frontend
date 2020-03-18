@@ -16,7 +16,7 @@ export default function ImageCard(props) {
             return
         } 
 
-        let newImage = {image_id: image.id, user_id: user.id, fill_colors: []}
+        let newImage = {image_id: image.id, user_id: user.id}
 
         fetch(`http://localhost:3000/user_images`, {
             method: 'POST',

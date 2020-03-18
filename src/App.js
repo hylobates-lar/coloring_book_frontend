@@ -4,12 +4,12 @@ import {Switch, Route} from 'react-router-dom';
 import {withRouter} from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
-import MyGallery from './components/MyGallery';
-import ImageGallery from './components/ImageGallery';
-import ColoringPage from './components/ColoringPage';
+import MyGallery from './components/UserGallery/MyGallery';
+import ImageGallery from './components/ImageGallery/ImageGallery';
+import ColoringPage from './components/ImageGallery/ColoringPage';
 import Logout from './components/Logout';
-import { useDispatch } from 'react-redux';
 import Auth from './components/Auth';
+import { useDispatch } from 'react-redux';
 
 
 const App = () => {

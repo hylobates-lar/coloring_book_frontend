@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 function NavBar() {
   const {token} = useSelector(state => state.auth);
-  console.log("token", token)
+  
   return (
     (!token) ?
       (<ul className="nav">

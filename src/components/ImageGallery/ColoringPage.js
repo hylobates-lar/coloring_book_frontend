@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import {useParams} from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import Sunflower from './Sunflower';
+import ColoredInImage from '../Images/ColoredInImage'
+import ColorPalette from './ColorPalette';
 
-const components = {
-    "Sunflower": Sunflower
-}
+
 
 export default function ColoringPage() {
 
@@ -21,16 +20,13 @@ export default function ColoringPage() {
         .then(r => r.json())
         .then(data => {
             setUserImage(data)
-        })
+        })   
     }
     
-
     if (!userImage.id) {
-        return <h1> not found </h1>
+        return <h1> Image not found </h1>
     }
 
-    const image = userImage.image
-    const ColorImage = components[image.component]
 
     const onFillColor = (i) => {
         let newFillColors = userImage.fill_colors.slice(0)
@@ -40,12 +36,23 @@ export default function ColoringPage() {
             ...userImage,
             fill_colors: newFillColors
         })
+
+        fetch(`http://localhost:3000/user_images/${id}`,{
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `bearer ${token}`},
+            body: JSON.stringify({id: userImage.id, fill_colors: newFillColors})
+        })
+        .then(r => r.json())
+        .then(console.log)   
     }
 
     return(
         <div>
             <h1>This is the Coloring Page</h1>
-            <ColorImage onFill={onFillColor} fillColors={userImage.fill_colors}/>
+            <ColoredInImage component={userImage.image.component} onFill={onFillColor} fillColors={userImage.fill_colors}/>
+            <ColorPalette currentColor={color} changeColor={setColor} />
         </div>
     )
 }

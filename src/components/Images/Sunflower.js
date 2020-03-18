@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function Sunflower(props) {
+    
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="793.70076" height="793.7067066666666">
             <title>Sun Flower Template</title>
