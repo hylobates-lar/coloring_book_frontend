@@ -41,7 +41,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Hi from App</h1>
+      <div id="header"><h1 id="logo">Coloring Book</h1></div>
       <NavBar/>
       <Switch>
         <Route path="/login" component={Auth} />

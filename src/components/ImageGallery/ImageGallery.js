@@ -21,17 +21,15 @@ export default function ImageGallery() {
 
     
     return (
-        <div id="image-gallery"> 
-        {/* <Row gutter={[48, 24]}> */}
-        <h1>Hi from Image Gallery</h1>
-            {images.map((image) => {
-                return (
-                // <Col span={8}>
-                    <ImageCard image={image} key={image.id} />    
-                // </Col>
-                )
-            })}
-        {/* </Row> */}
+        <div>
+            <h2>Choose an image to color!</h2>
+            <div id="image-gallery"> 
+                {images.map((image) => {
+                    return (
+                        <ImageCard id="image-card" image={image} key={image.id} />    
+                    )
+                })}
+            </div>
         </div>
     )
 }

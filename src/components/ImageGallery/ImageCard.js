@@ -40,9 +40,11 @@ export default function ImageCard(props) {
    
         return(
             <div id="image-card">
-                <h1>{image.title}</h1>
-                <img src={`http://localhost:3000${image.svg_url}`} />
-                <button onClick={colorImage}>Color Me!</button>
+                <div className="image-container">
+                    <h1>{image.title}</h1>
+                    <img id="svg-image" src={`http://localhost:3000${image.svg_url}`} />
+                </div>
+                    <button onClick={colorImage}>Color Me!</button>
             </div>
         )
     

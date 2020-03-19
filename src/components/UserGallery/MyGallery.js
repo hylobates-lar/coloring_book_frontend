@@ -9,16 +9,23 @@ export default function MyGallery() {
   const {token, user} = useSelector(state => state.auth);
   const history = useHistory();
   const [userImages, setUserImages] = useState([]);
+  const [fetched, setFetched] = useState(false);
   
-  if (token && userImages.length === 0) {
-    fetch(`http://localhost:3000/user_images`,{
+  useEffect(() => {
+    const abortController = new AbortController()
+
+    if(token && !fetched)
+      fetch(`http://localhost:3000/user_images`,
+      {
         headers: {'Authorization': `bearer ${token}`}
-    })
-    .then(r => r.json())
-    .then(data => {
-        setUserImages(data)
-    })  
-  }
+      })
+      .then(r => r.json())
+      .then(data => {
+          setUserImages(data)
+          setFetched(true)
+      })  
+  }, [])
+  
   
   if(!token){
     history.push("/login")
@@ -26,9 +33,11 @@ export default function MyGallery() {
  
   return (
     <div>
-      <h1>Hi from {user.username}'s Gallery</h1>
-     
-      {userImages.map(userImageObj => <MyImageCard key={userImageObj.id} userImage={userImageObj} />)}
+      <h2>Hi from {user.username}'s Gallery</h2>
+      <div id="my-gallery">
+      {userImages.length === 0 ? <h2>No images yet!</h2> :
+        userImages.map(userImageObj => <MyImageCard id="my-image-card" key={userImageObj.id} userImage={userImageObj} />)}
+      </div>
     </div>
   );
   

@@ -14,8 +14,8 @@ export default function ColoredInImage(props) {
    
     return(
         <div>
-            <h1>This is the Colored Image</h1>
-            <ColorImage onFill={props.onFill} fillColors={props.fillColors}/>
+    
+            <ColorImage id="svg-image" onFill={props.onFill} fillColors={props.fillColors}/>
             
         </div>
     )

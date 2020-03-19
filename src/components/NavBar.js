@@ -8,32 +8,36 @@ function NavBar() {
   
   return (
     (!token) ?
-      (<ul className="nav">
-        <li>
-          <NavLink to="/">Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="/login">Login</NavLink>
-        </li>
-        <li>
-          <NavLink to="/images">Image Gallery</NavLink>
-        </li>
-      </ul>)
-    :
-      (<ul className="nav">
+        ( 
+        <ul className="nav-bar">
           <li>
             <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/logout">Log Out</NavLink>
-          </li>
-          <li>
-            <NavLink to="/mygallery">My Images</NavLink>
+            <NavLink to="/login">Login</NavLink>
           </li>
           <li>
             <NavLink to="/images">Image Gallery</NavLink>
           </li>
-        </ul>)
+        </ul>
+        )
+      :
+        (
+          <ul className="nav-bar">
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/logout">Log Out</NavLink>
+            </li>
+            <li>
+              <NavLink to="/mygallery">My Images</NavLink>
+            </li>
+            <li>
+              <NavLink to="/images">Image Gallery</NavLink>
+            </li>
+          </ul>
+        )
     
   )
 };

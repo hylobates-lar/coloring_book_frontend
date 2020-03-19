@@ -1,0 +1,226 @@
+
+
+body {
+    margin: 0;
+    font-family: monospace;
+    background-color: darkgray
+  }
+
+  /* header */
+ 
+  #header {
+    display: flex;
+    background: black;
+    height: 5rem;
+    padding: 1rem;
+  }
+
+  #logo {
+      color: white;
+    /* font-family: 'Bungee Shade', cursive;
+    text-align: center;
+    margin: .5em 0 0; */
+  }
+
+  .nav-bar {
+    padding: 15px;
+    list-style-type: none;
+    justify-content: space-evenly;
+    display: flex;
+    background-color: white;
+  }
+
+  /* #cart-button {
+    border: 0;
+    background: #78f89f;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+    line-height: 1;
+
+  } */
+
+  a.link:hover {
+    /*Any style you want to have link on mouse over*/
+    background-color: white;
+  }
+
+
+/* bio page */
+
+/* .ant-carousel .slick-slide {
+  max-width: 100%;
+  line-height: 50px;
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide img {
+  max-width: 100%;
+}
+
+.ant-typography + h3.ant-typography {
+  margin-top: 0.5em;
+}
+
+h1.ant-typography, .ant-typography h1 {
+  margin-bottom: 0em;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 1.23;
+}
+
+#bio-content {
+    padding: 30px;    
+} */
+
+/* image gallery */
+
+h2 {
+    text-align: center;
+}
+
+#image-gallery {
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #image-card {
+    text-align: center;
+    background-color: white;
+    border: rgb(207, 207, 207) solid 1px;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 20rem;
+    height: 25rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px #afafaf
+  }
+
+  #svg-image {
+    /* max-height: 100%; */
+    height: 20rem;
+    max-width: 100%;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* #description {
+    font-size: small;
+  } */
+
+/* movie show page */
+
+/* .movie-show {
+    padding: 30px;
+}
+
+#movie-poster {
+  padding: 30px;
+  display: flex;
+  flex-direction: column; */
+  /* background: red; */
+  /* justify-content: flex-start;
+  
+}
+
+.movie-show-image {
+  width: 19rem;
+  height: 27rem;
+  border: rgb(207, 207, 207) solid 1px;
+  box-shadow: 3px 4px #afafaf;
+  margin-bottom: 20px;
+}
+
+.movie-show-content {
+  padding: 20px;
+  width: 50rem; */
+  /* background: green; */
+  
+/* } */
+
+/* user's gallery */
+
+  #my-gallery {
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #my-image-card {
+    text-align: center;
+    border: rgb(207, 207, 207) solid 1px;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 20rem;
+    height: 27rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px #afafaf
+  }
+
+  .image-container {
+    height: 24rem;
+    width: 20rem;
+  }
+  
+  .colored-in-image {
+    max-height: 17rem;
+    max-width: 100%;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+
+/* pop up cart modal styling */
+
+#modal {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  
+  }
+  
+  #cart {
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    margin: 20vh auto 0;
+    padding-top: 10px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 1.1s ease-out;  
+  }
+
+  h2 {
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .actions {
+    /* border-top: 1px solid #ccc; */
+    background: #eee;
+    padding: 0.5rem 1rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.toggle-button {
+    border: 0;
+    background: #78f89f;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    line-height: 1;
+}

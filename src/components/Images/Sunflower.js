@@ -1,11 +1,11 @@
 import React from 'react';
 
 export default function Sunflower(props) {
-    
+    const scaleStyle = {transform: "scale(.4)", transformOrigin: "80px 50px"}
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="793.70076" height="793.7067066666666">
+        <svg xmlns="http://www.w3.org/2000/svg" id={props.id}>
             <title>Sun Flower Template</title>
-            <g id="layer2" transform="translate(114 66)" display="inline">
+            <g id="layer2" style={scaleStyle} display="inline" >
             <g id="svg_27" transform="matrix(0.849029 0 0 0.849029 65.2874 25.9633)">
                 <path id="svg_28" onClick={() => props.onFill(0)} fill={props.fillColors[0]} fill-rule="evenodd" stroke="#000000" stroke-width="8" d="m335.662872,237.986206c29.202484,-24.342041 60.58606,-230.559322 9.385345,-295.979031c-73.760437,41.40971 -167.217957,217.611736 -116.882584,287.760891c50.335403,70.149139 107.90538,6.715332 107.497238,8.21814z"/>
                 <path id="svg_29" onClick={() => props.onFill(1)} fill={props.fillColors[1]} fill-rule="evenodd" stroke="#000000" stroke-width="8" d="m386.044678,310.854431c37.9216,-2.697144 183.860779,-151.734833 180.521729,-234.741455c-84.056488,-9.480042 -262.842316,78.93425 -262.968384,165.273926c-0.126099,86.339691 83.655823,68.486267 82.446655,69.467529z"/>

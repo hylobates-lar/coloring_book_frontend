@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from "react-router-dom";
 import ColoredInImage from '../Images/ColoredInImage';
+import MyFeaturedImage from './MyFeaturedImage';
 
 
 export default function MyImageCard(props) {
@@ -16,8 +17,11 @@ export default function MyImageCard(props) {
    
     return(
         <div id="image-card">
-            <h1>{image.title}</h1>
-            <ColoredInImage component={image.component} onFill={()=>{}} fillColors={props.userImage.fill_colors}/>  
+            <div className="image-container">
+                <h1>{image.title}</h1>
+                <ColoredInImage component={image.component} onFill={()=>{}} fillColors={props.userImage.fill_colors}/>
+                <MyFeaturedImage />
+            </div>  
         </div>
     )
 
