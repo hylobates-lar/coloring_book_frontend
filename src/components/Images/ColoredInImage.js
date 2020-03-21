@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Sunflower from './Sunflower';
+import Rose from './Rose';
 
 const components = {
     "Sunflower": Sunflower,
-    // "Rose": Rose,
+    "Rose": Rose
     // "Flower": Flower
 }
 

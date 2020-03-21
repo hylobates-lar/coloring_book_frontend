@@ -3,15 +3,15 @@ import React from 'react';
 
 
 export default function ColorPalette(props) {
-    const colors = ["red", "orange", "yellow", "green", "blue", "purple", "pink", "white"]
+    const colors = ["red", "orange", "yellow", "green", "blue", "purple", "pink", "white", "darkturquoise", "teal", "hotpink", "sienna", "goldenrod", "darkviolet", "khaki", "olive", "darkgreen", "mediumseagreen", "tomato", "orangered", "maroon", "darkblue", "cornflowerblue", "darkslategray", "darkorange", "deeppink"]
 
     return(
-        <div>
+        <div className="color-palette">
             {colors.map(color => { 
-                const textDecoration = props.currentColor === color ? "underline" : "none";
+                const chosenColor = props.currentColor === color ? "underline" : "none";
                 return (
                     <div onClick={() => {props.changeColor(color)}}>
-                        <h4 style={{backgroundColor: color, textDecoration: textDecoration}}>{color}</h4>
+                        <div className="color-swatch" style={{backgroundColor: color}}></div>
                     </div>
                 )
             })}

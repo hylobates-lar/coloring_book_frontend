@@ -5,6 +5,7 @@ import {withRouter} from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import MyGallery from './components/UserGallery/MyGallery';
+import MyFeaturedImage from './components/UserGallery/MyFeaturedImage';
 import ImageGallery from './components/ImageGallery/ImageGallery';
 import ColoringPage from './components/ImageGallery/ColoringPage';
 import Logout from './components/Logout';
@@ -33,7 +34,9 @@ const App = () => {
           });
         }
         else {
-          alert(resp.error)
+          dispatch({
+            type: 'CLEAR_USER'
+        });
         }
       })
     }
@@ -41,7 +44,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <div id="header"><h1 id="logo">Coloring Book</h1></div>
+      <div id="header"><h1 id="logo">Color by Nature</h1></div>
       <NavBar/>
       <Switch>
         <Route path="/login" component={Auth} />
@@ -50,6 +53,7 @@ const App = () => {
         <Route path="/" exact component={ Home } />
         <Route path="/images" exact component={ImageGallery} />
         <Route path="/coloringpage/:id" component={ColoringPage} />
+        <Route path="/featuredimage/:id" component={MyFeaturedImage} />
       </Switch>
     </div>
   )

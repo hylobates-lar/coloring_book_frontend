@@ -33,7 +33,7 @@ export default function MyGallery() {
  
   return (
     <div>
-      <h2>Hi from {user.username}'s Gallery</h2>
+      <h2>{user.username}'s Gallery</h2>
       <div id="my-gallery">
       {userImages.length === 0 ? <h2>No images yet!</h2> :
         userImages.map(userImageObj => <MyImageCard id="my-image-card" key={userImageObj.id} userImage={userImageObj} />)}

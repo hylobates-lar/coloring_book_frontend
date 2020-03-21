@@ -24,7 +24,7 @@ export default function ColoringPage() {
     }
     
     if (!userImage.id) {
-        return <h1> Image not found </h1>
+        return <h2>Loading...</h2>
     }
 
 
@@ -49,10 +49,12 @@ export default function ColoringPage() {
     }
 
     return(
-        <div>
-            <h1>This is the Coloring Page</h1>
-            <ColoredInImage component={userImage.image.component} onFill={onFillColor} fillColors={userImage.fill_colors}/>
+        <div className="coloring-page">
             <ColorPalette currentColor={color} changeColor={setColor} />
+            <ColoredInImage component={userImage.image.component} onFill={onFillColor} fillColors={userImage.fill_colors}/>
+            <div className="image-description">
+                <p>Description will go here</p>
+            </div>
         </div>
     )
 }

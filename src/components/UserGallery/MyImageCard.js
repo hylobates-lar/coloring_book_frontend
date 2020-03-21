@@ -12,7 +12,10 @@ export default function MyImageCard(props) {
     const dispatch = useDispatch();
     const history = useHistory();
 
-  
+    const showFeatured = () => {
+        history.push(`/featuredimage/${props.userImage.id}`)
+        
+    }
 
    
     return(
@@ -20,7 +23,7 @@ export default function MyImageCard(props) {
             <div className="image-container">
                 <h1>{image.title}</h1>
                 <ColoredInImage component={image.component} onFill={()=>{}} fillColors={props.userImage.fill_colors}/>
-                <MyFeaturedImage />
+                <button onClick={showFeatured}>View Image</button>
             </div>  
         </div>
     )
