@@ -21,7 +21,6 @@ export default function MyImageCard(props) {
     return(
         <div id="image-card">
             <div className="image-container">
-                <h1>{image.title}</h1>
                 <ColoredInImage component={image.component} onFill={()=>{}} fillColors={props.userImage.fill_colors}/>
                 <button onClick={showFeatured}>View Image</button>
             </div>  

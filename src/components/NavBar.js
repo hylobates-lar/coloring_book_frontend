@@ -11,13 +11,13 @@ function NavBar() {
         ( 
         <ul className="nav-bar">
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink className="nav-bar-link" to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/login">Login/Create Account</NavLink>
+            <NavLink className="nav-bar-link" to="/images">Image Gallery</NavLink>
           </li>
           <li>
-            <NavLink to="/images">Image Gallery</NavLink>
+            <NavLink className="nav-bar-link" to="/login">Login/Create Account</NavLink>
           </li>
         </ul>
         )
@@ -25,16 +25,16 @@ function NavBar() {
         (
           <ul className="nav-bar">
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink className="nav-bar-link" to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/logout">Log Out</NavLink>
+              <NavLink className="nav-bar-link" to="/mygallery">My Images</NavLink>
             </li>
             <li>
-              <NavLink to="/mygallery">My Images</NavLink>
+              <NavLink className="nav-bar-link" to="/images">Image Gallery</NavLink>
             </li>
             <li>
-              <NavLink to="/images">Image Gallery</NavLink>
+              <NavLink className="nav-bar-link" to="/logout">Log Out</NavLink>
             </li>
           </ul>
         )

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import {useParams, useHistory} from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import ColoredInImage from '../Images/ColoredInImage'
-
+import ColoredInImage from '../Images/ColoredInImage';
+import {saveSvgAsPng} from 'save-svg-as-png';
 
 
 
@@ -49,14 +49,25 @@ export default function MyFeaturedImage(props) {
         history.push(`/coloringpage/${userImage.id}`)
     }
 
+    const backToGallery = () => {
+        history.push('/mygallery')
+    }
+
+    const saveImage = () => {
+        saveSvgAsPng(document.getElementById("svg-image"), "myimage.png");
+    }
+
     return(
-        <div>
-            <div>
-                <h2>This is the featured image page</h2>
+        <div className="featured-image-page">
+            <div className="featured-image-container">
                 <ColoredInImage component={userImage.image.component}  fillColors={userImage.fill_colors}/>
             </div>
-            <button onClick={editImage}>Edit this Image</button>
-            <button onClick={deleteImage}>Delete this Image</button>
+            <div id="buttons">
+                <button onClick={editImage}>Edit this Image</button>
+                <button onClick={saveImage}>Download this Image</button>
+                <button onClick={backToGallery}>Back to My Images</button>
+                <button onClick={deleteImage}>Delete this Image</button>
+            </div>
            
         </div>
     )

@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Sunflower(props) {
-    const scaleStyle = {transform: "scale(.4)", transformOrigin: "80px 50px"}
+    const scaleStyle = {transform: "scale(.35)", transformOrigin: "65px 60px"}
     return (
         <svg xmlns="http://www.w3.org/2000/svg" id={props.id}>
             <title>Sun Flower Template</title>

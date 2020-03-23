@@ -44,8 +44,11 @@ const App = () => {
 
   return (
     <div className="App">
-      <div id="header"><h1 id="logo">Color by Nature</h1></div>
-      <NavBar/>
+      <div className="background"></div>
+      <div id="header">
+        <h1 id="logo">Color by Nature</h1>
+        <NavBar/>
+      </div>
       <Switch>
         <Route path="/login" component={Auth} />
         <Route path="/logout" component={Logout} />

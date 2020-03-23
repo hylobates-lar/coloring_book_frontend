@@ -22,7 +22,7 @@ export default function ImageGallery() {
     
     return (
         <div>
-            <h2>Choose an image to color!</h2>
+            <h3>Choose an image to color!</h3>
             <div id="image-gallery"> 
                 {images.map((image) => {
                     return (

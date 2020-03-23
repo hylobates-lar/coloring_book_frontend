@@ -50,8 +50,8 @@ export default function Auth() {
   }
   return (
     <div>
-      <h2>{login ? 'Login' : 'Sign Up'}</h2>
       <div className="form-page">
+      <h3 style={{color: "black"}}>{login ? 'Login' : 'Sign Up'}</h3>
         <form onSubmit={handleSubmit} className="form">
           <input
             type="text"
@@ -70,7 +70,7 @@ export default function Auth() {
             placeholder="Password"
             className="input"
           />
-          <input type="submit" style={{marginTop: "20px", maxWidth: "70px"}}/>
+          <input type="submit" id="submit-button"/>
         </form>
         <hr style={{marginLeft: "10%", width: "80%"}}/>
         <div id="change-form-button">

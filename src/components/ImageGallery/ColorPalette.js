@@ -8,10 +8,10 @@ export default function ColorPalette(props) {
     return(
         <div className="color-palette">
             {colors.map(color => { 
-                const chosenColor = props.currentColor === color ? "underline" : "none";
+                const activeClass = props.currentColor === color ? "color-swatch-active" : "";
                 return (
                     <div onClick={() => {props.changeColor(color)}}>
-                        <div className="color-swatch" style={{backgroundColor: color}}></div>
+                        <div className={`color-swatch ${activeClass}`}  style={{backgroundColor: color}}></div>
                     </div>
                 )
             })}
