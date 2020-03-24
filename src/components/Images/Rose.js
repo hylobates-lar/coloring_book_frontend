@@ -1,7 +1,11 @@
 import React from 'react';
 
 export default function Rose(props) {
-    const scaleStyle = {transform: "scale(.12)", transformOrigin: "30px 50px"}
+    let scaleStyle = {transform: "scale(.12)", transformOrigin: "30px 50px"}
+    if (props.size === "large") {
+        scaleStyle = {transform: "scale(.2)", transformOrigin: "100px 100px"}
+    }
+    
     return (
         <svg xmlns="http://www.w3.org/2000/svg" id={props.id}>
              <title>Uncoloured Rose</title>

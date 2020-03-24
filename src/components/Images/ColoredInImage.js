@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Sunflower from './Sunflower';
 import Rose from './Rose';
+import Yosemite from './Yosemite';
+import Sequoia from './Sequoia'
 
 const components = {
     "Sunflower": Sunflower,
-    "Rose": Rose
+    "Rose": Rose,
+    "Yosemite": Yosemite,
+    "Sequoia": Sequoia
     // "Flower": Flower
 }
 
@@ -14,10 +18,8 @@ export default function ColoredInImage(props) {
 
    
     return(
-        <div>
-    
-            <ColorImage id="svg-image" onFill={props.onFill} fillColors={props.fillColors}/>
-            
-        </div>
+       
+        <ColorImage id="svg-image" onFill={props.onFill} fillColors={props.fillColors} {...props} />   
+        
     )
 }

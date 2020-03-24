@@ -51,9 +51,9 @@ export default function ColoringPage() {
     return(
         <div className="coloring-page">
             <ColorPalette currentColor={color} changeColor={setColor} />
-            <div style={{textAlign: "center"}}> 
-                <ColoredInImage component={userImage.image.component} onFill={onFillColor} fillColors={userImage.fill_colors}/>
-                <h5 style={{margin: "auto", color: "white"}}>*This image will save automatically, so color away! 👍</h5>
+            <div id="coloring-image-container" > 
+                <ColoredInImage size="large" component={userImage.image.component} onFill={onFillColor} fillColors={userImage.fill_colors}/>
+                <p style={{marginTop: "30px", marginBottom: "30px", color: "white"}}>*This image will save automatically, so color away! 👍</p>
             </div>
             <div className="image-description">
                 <p>Description will go here</p>

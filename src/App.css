@@ -58,9 +58,18 @@ body {
     margin-bottom: 10px;
   } */
 
+  h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 35px;
+  }
+
   h3 {
       text-align: center;
       color: white;
+      margin-bottom: 20px;
+      margin-top: 35px;
   }
 
   button {
@@ -123,7 +132,7 @@ body {
 
 
 #image-gallery {
-    margin: 2rem;
+    margin: 0.5rem 2rem 2rem 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -154,11 +163,17 @@ body {
   /* coloring page */
 
   #svg-image {
-    height: 20rem;
-    max-width: 100%;
-    width: auto;
+    height: 100%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #coloring-image-container {
+    text-align: center;
+    height: 550px;
+    width: 600px;
+    
   }
 
 .coloring-page {
@@ -203,6 +218,7 @@ body {
   padding: 10px;
 }
 
+
 /* user's gallery */
 
   #my-gallery {
@@ -225,7 +241,7 @@ body {
   }
 
   .image-container {
-    height: 22rem;
+    height: 19rem;
     width: 17rem;
   }
   
@@ -238,6 +254,7 @@ body {
     
   }
 
+
 /* my featured image */
 
 .featured-image-page {
@@ -249,7 +266,10 @@ body {
 }
 
 .featured-image-container {
-  border: rgb(207, 207, 207) solid 1px;
+  /* border: rgb(207, 207, 207) solid 1px; */
+  height: 550px;
+  width: 600px;
+  
   /* background: white; */
 }
 
