@@ -171,7 +171,7 @@ body {
 
   #coloring-image-container {
     text-align: center;
-    height: 550px;
+    height: 700px;
     width: 600px;
     
   }
@@ -179,7 +179,7 @@ body {
 .coloring-page {
   display: flex;
   padding: 30px;
-  margin: 20px;
+  margin: 50px 20px;
   align-items: center;
   justify-content: space-between;
   column-count: 3;
@@ -189,7 +189,7 @@ body {
 .color-palette {
   background: black;
   padding: 10px;
-  max-height: 500px;
+  max-height: 600px;
   display: grid;
   overflow: scroll;
   grid-template-columns: 1fr 1fr 1fr;
@@ -212,7 +212,7 @@ body {
 
 .image-description {
   background: white;
-  height: 500px;
+  height: 600px;
   width: 250px;
   border-radius: 7px;
   padding: 10px;
@@ -258,7 +258,7 @@ body {
 /* my featured image */
 
 .featured-image-page {
-  display: flex;
+  /* display: flex; */
   padding: 30px;
   margin: 20px;
   align-items: center;
@@ -267,15 +267,28 @@ body {
 
 .featured-image-container {
   /* border: rgb(207, 207, 207) solid 1px; */
-  height: 550px;
+  height: 700px;
   width: 600px;
+  margin-left: auto;
+  margin-right: auto;
   
-  /* background: white; */
+  
 }
 
-#buttons {
+#featured-buttons {
+  position: absolute;
+  top: 400px;
+  right: 150px;
   display: flex;
   flex-direction: column;
+  
 }
+
+
+
+
+
+
+
 
 
