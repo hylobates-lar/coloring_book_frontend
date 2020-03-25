@@ -7,9 +7,9 @@ const Home = () => (
   <div className="home">
     <h2>This is home</h2> 
     <div className="carousel-container">
-      <Carousel showArrows={true} autoPlay={true} showThumbs={false}>
+      <Carousel showArrows={true} autoPlay={true} showThumbs={false} infiniteLoop={true}>
             <div>
-                <img src="https://assets3.thrillist.com/v1/image/2850831/size/gn-gift_guide_variable_c_2x.jpg" />
+                <img src="https://images.prismic.io/rvshare/936b26fe018a6a3aae817aed4e4329bfd5e5d7da_zion-8.jpg?auto=compress,format" />
                 <p className="legend">Zion National Park</p>
             </div>
             <div>
@@ -17,20 +17,28 @@ const Home = () => (
                 <p className="legend">Grand Canyon National Park</p>
             </div>
             <div>
-                <img src="https://www.nationalparks.org/sites/default/files/styles/list_1x/public/shutterstock_176085914.jpg?itok=Sjw35HEd&timestamp=1468268901" />
-                <p className="legend">Canyonlands National Park</p>
+                <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/valley-view-yosemite-national-park-scott-mcguire.jpg" />
+                <p className="legend">Yosemite National Park</p>
             </div>
             <div>
                 <img src="https://www.wildmoments.net/images/large/brycedone1.jpg" />
                 <p className="legend">Bryce Canyon National Park</p>
             </div>
             <div>
-                <img src="assets/5.jpeg" />
-                <p className="legend">Legend 5</p>
+                <img src="http://www.destinationparks.com/images/park/saguaro-national-park-1280x853.jpg" />
+                <p className="legend">Saguaro National Park</p>
             </div>
             <div>
-                <img src="assets/6.jpeg" />
-                <p className="legend">Legend 6</p>
+                <img src="https://www.scenic-safaris.com/files/large/950b806f511401b" />
+                <p className="legend">Yellowstone National Park</p>
+            </div>
+            <div>
+                <img src="https://www.davesoldanoimages.com/img/s/v-10/p244139833-3.jpg" />
+                <p className="legend">Canyonlands National Park</p>
+            </div>
+            <div>
+                <img src="https://www.chaletvillage.com/wp-content/uploads/2017/05/Sunrise-in-the-mountains-near-Gatlinburg.jpg" />
+                <p className="legend">Great Smoky Mountains National Park</p>
             </div>
         </Carousel>
         );

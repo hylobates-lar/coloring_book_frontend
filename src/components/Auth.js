@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from "react-router-dom";
+import swal from 'sweetalert';
 
 export default function Auth() {
   const {user} = useSelector(state => state.auth);
@@ -28,13 +29,14 @@ export default function Auth() {
       .then(r => r.json())
       .then(data => {
         if (data.error) {
-          alert(data.error)
+          swal("User not found", "Please try entering your info again", "error");
           return
         }
         dispatch({
           type: 'SET_USER',
           payload: data
         });
+        swal("Login Success", `Welcome ${form.username}!`, "success");
         history.push("/mygallery")
       });
   }
