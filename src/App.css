@@ -82,6 +82,19 @@ body {
   }
 
 
+/* home page */
+
+.carousel-container {
+  height: 600px;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.carousel.carousel-slider button.control-arrow {
+  top: 50%;
+}
 
 /* login/signup page */
 
