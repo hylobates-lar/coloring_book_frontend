@@ -48,6 +48,8 @@ export default function ColoringPage() {
         .then(console.log)   
     }
 
+    let currentImage = userImage.image
+
     return(
         <div className="coloring-page">
             <ColorPalette currentColor={color} changeColor={setColor} />
@@ -56,7 +58,11 @@ export default function ColoringPage() {
                 <p style={{marginTop: "30px", marginBottom: "30px", color: "white"}}>*This image will save automatically, so color away! 👍</p>
             </div>
             <div className="image-description">
-                <p>Description will go here</p>
+                <p>{currentImage.national_park} National Park</p>
+                <ul>
+                    <li>Established: {currentImage.year}</li>
+                    {console.log(currentImage)}
+                </ul>
             </div>
         </div>
     )
