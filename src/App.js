@@ -58,6 +58,9 @@ const App = () => {
         <Route path="/coloringpage/:id" component={ColoringPage} />
         <Route path="/featuredimage/:id" component={MyFeaturedImage} />
       </Switch>
+      {/* <div id="footer">
+        <h5 style={{color: "white"}}>Made by Alison Quaglia // 2020</h5>
+      </div> */}
     </div>
   )
 }

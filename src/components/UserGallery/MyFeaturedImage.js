@@ -73,6 +73,9 @@ export default function MyFeaturedImage(props) {
 
     return(
         <div className="featured-image-page">
+            <div id="quote">
+                <p style={{marginTop: "3"}}>"Our task must be to free ourselves by widening our circle of compassion to embrace all living creatures and the whole of nature and its beauty."<b> - Albert Einstein</b></p>
+            </div>
             <div className="featured-image-container">
                 <ColoredInImage size={'large'} component={userImage.image.component}  fillColors={userImage.fill_colors}/>
             </div>

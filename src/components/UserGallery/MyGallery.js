@@ -31,13 +31,13 @@ export default function MyGallery() {
   }, [])
   
   
-  if(!token){
+  if(!localStorage.getItem("token")){
     history.push("/login")
   }
  
   return (
     <div>
-      <h3>{user.username}'s Gallery</h3>
+      {user && <h3>{user.username}'s Gallery</h3>}
       <div id="my-gallery">
       {userImages.length === 0 ? <h2>{loadingMessage}</h2> :
         userImages.map(userImageObj => <MyImageCard id="my-image-card" key={userImageObj.id} userImage={userImageObj} />)}

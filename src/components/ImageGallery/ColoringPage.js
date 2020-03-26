@@ -58,7 +58,7 @@ export default function ColoringPage() {
                 <p style={{marginTop: "30px", marginBottom: "30px", color: "white"}}>*This image will save automatically, so color away! 👍</p>
             </div>
             <div className="image-description">
-                <h2 id="description-heading" style={{}}>{currentImage.national_park} National Park</h2>
+                <h2 id="description-heading" >{currentImage.national_park} National Park</h2>
                 <hr></hr>
                 <p><b>Established:</b> {currentImage.year}</p>
                 <p><b>Location:</b> {currentImage.location}</p>
