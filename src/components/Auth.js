@@ -53,7 +53,7 @@ export default function Auth() {
   return (
     <div>
       <div className="form-page">
-      <h3 style={{color: "black"}}>{login ? 'Login' : 'Sign Up'}</h3>
+      <h3 style={{color: "black", marginBottom: "10px"}}>{login ? 'Login' : 'Sign Up'}</h3>
         <form onSubmit={handleSubmit} className="form">
           <input
             type="text"
