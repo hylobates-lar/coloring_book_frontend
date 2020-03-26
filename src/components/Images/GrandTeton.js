@@ -4,8 +4,8 @@ export default function GrandTeton(props) {
 	let scaleStyle = {transform: "scale(.21)", transformOrigin: "16px 0px"}
 	let containerStyle = {width: "300px", height: "500px"}
     if (props.size === "large") {
-		scaleStyle = {transform: "scale(.48)", transformOrigin: "40px 30px"}
-		containerStyle = {width: "600px", height: "700px"}
+		scaleStyle = {transform: "scale(.48)", transformOrigin: "0px 0px"}
+		containerStyle = {width: "558px", height: "720px"}
     }
     
     return (

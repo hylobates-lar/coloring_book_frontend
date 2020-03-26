@@ -10,6 +10,7 @@ export default function MyGallery() {
   const history = useHistory();
   const [userImages, setUserImages] = useState([]);
   const [fetched, setFetched] = useState(false);
+  const [loadingMessage, setLoadingMessage] = useState("Loading...")
   
   useEffect(() => {
     const abortController = new AbortController()
@@ -23,6 +24,9 @@ export default function MyGallery() {
       .then(data => {
           setUserImages(data)
           setFetched(true)
+          if (data.length == 0) {
+            setLoadingMessage("No images found")
+          }
       })  
   }, [])
   
@@ -35,7 +39,7 @@ export default function MyGallery() {
     <div>
       <h3>{user.username}'s Gallery</h3>
       <div id="my-gallery">
-      {userImages.length === 0 ? <h2>No images yet!</h2> :
+      {userImages.length === 0 ? <h2>{loadingMessage}</h2> :
         userImages.map(userImageObj => <MyImageCard id="my-image-card" key={userImageObj.id} userImage={userImageObj} />)}
       </div>
     </div>

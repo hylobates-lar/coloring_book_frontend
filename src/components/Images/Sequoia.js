@@ -5,7 +5,7 @@ export default function Sequoia(props) {
 	let containerStyle = {width: "300px", height: "500px"}
     if (props.size === "large") {
 		scaleStyle = {transform: "scale(.75)", transformOrigin: "100px 100px"}
-		containerStyle = {width: "600px", height: "600px"}
+		containerStyle = {width: "571px", height: "571px"}
     }
    
     return (

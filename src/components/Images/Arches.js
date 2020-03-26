@@ -4,8 +4,8 @@ export default function Arches(props) {
 	let scaleStyle = {transform: "scale(.235)", transformOrigin: "-5px -20px"}
 	let containerStyle = {width: "300px", height: "500px"}
     if (props.size === "large") {
-		scaleStyle = {transform: "scale(.5)", transformOrigin: "30px 30px"}
-		containerStyle = {width: "600px", height: "700px"}
+		scaleStyle = {transform: "scale(.5)", transformOrigin: "0px 0px"}
+		containerStyle = {width: "582px", height: "750px"}
     }
     
     return (

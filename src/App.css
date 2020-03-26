@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    font-family: sans-serif; 
+    font-family: 'Poppins', sans-serif; 
   }
   
   .background {
@@ -52,13 +52,9 @@ body {
     color: white;
     margin: 0 12px;
     text-decoration: none;
-    font-family: sans-serif;
+    
   }
 
-  /* h1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  } */
 
   h2 {
     text-align: center;
@@ -74,8 +70,12 @@ body {
       margin-top: 35px;
   }
 
+  h4 {
+    margin: 0;
+  }
+
   button {
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: smaller;
     border-radius: 5px;
     height: 30px;
@@ -160,7 +160,7 @@ body {
     border-radius: 5px;
     padding: 1rem;
     width: 17rem;
-    height: 22rem;
+    height: 24rem;
     display: flex;
     margin: 1rem 2rem;
     flex-direction: column;
@@ -186,8 +186,6 @@ body {
 
   #coloring-image-container {
     text-align: center;
-    height: 700px;
-    width: 700px;
     
   }
 
@@ -195,10 +193,9 @@ body {
   display: flex;
   padding: 30px;
   margin: 50px 20px;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
-  column-count: 3;
-  column-fill: balance;
+
 }
 
 .color-palette {
@@ -227,10 +224,11 @@ body {
 
 .image-description {
   background: white;
-  height: 600px;
+  height: 555px;
   width: 250px;
   border-radius: 7px;
-  padding: 10px;
+  padding: 30px;
+  overflow: scroll;
 }
 
 
@@ -274,7 +272,7 @@ body {
 /* my featured image */
 
 .featured-image-page {
-  /* display: flex; */
+  display: flex;
   padding: 30px;
   margin: 20px;
   align-items: center;
@@ -282,9 +280,6 @@ body {
 }
 
 .featured-image-container {
-  /* border: rgb(207, 207, 207) solid 1px; */
-  height: 700px;
-  width: 700px;
   margin-left: auto;
   margin-right: auto;
   
@@ -300,6 +295,9 @@ body {
   
 }
 
+#featured-buttons button {
+  margin: 10px 0;
+}
 
 
 

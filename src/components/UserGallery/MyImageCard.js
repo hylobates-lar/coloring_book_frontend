@@ -20,6 +20,7 @@ export default function MyImageCard(props) {
    
     return(
         <div id="image-card">
+            <h4>{image.national_park} National Park</h4>
             <div className="image-container">
                 <ColoredInImage component={image.component} onFill={()=>{}} fillColors={props.userImage.fill_colors}/>
             </div>  

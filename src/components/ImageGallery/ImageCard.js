@@ -40,6 +40,7 @@ export default function ImageCard(props) {
    
         return(
             <div id="image-card">
+                    <h4>{image.national_park} National Park</h4>
                     <img className="new-image" src={`http://localhost:3000${image.svg_url}`} />
                     <button onClick={colorImage}>Color Me!</button>
             </div>

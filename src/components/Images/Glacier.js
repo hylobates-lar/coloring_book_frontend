@@ -4,8 +4,8 @@ export default function Glacier(props) {
 	let scaleStyle = {transform: "scale(.21)", transformOrigin: "16px 0px"}
 	let containerStyle = {width: "300px", height: "500px"}
     if (props.size === "large") {
-		scaleStyle = {transform: "scale(.46)", transformOrigin: "70px 5px"}
-		containerStyle = {width: "600px", height: "700px"}
+		scaleStyle = {transform: "scale(.46)", transformOrigin: "0px 0px"}
+		containerStyle = {width: "535px", height: "690px"}
     }
     
     return (

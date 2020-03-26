@@ -4,8 +4,8 @@ export default function Saguaro(props) {
 	let scaleStyle = {transform: "scale(.23)", transformOrigin: "1px -50px"}
 	let containerStyle = {width: "300px", height: "500px"}
     if (props.size === "large") {
-		scaleStyle = {transform: "scale(.46)", transformOrigin: "60px 10px"}
-		containerStyle = {width: "600px", height: "700px"}
+		scaleStyle = {transform: "scale(.46)", transformOrigin: "0px 0px"}
+		containerStyle = {width: "535px", height: "690px"}
     }
     
     return (

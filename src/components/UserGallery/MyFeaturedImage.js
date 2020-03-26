@@ -77,10 +77,10 @@ export default function MyFeaturedImage(props) {
                 <ColoredInImage size={'large'} component={userImage.image.component}  fillColors={userImage.fill_colors}/>
             </div>
             <div id="featured-buttons">
-                <button onClick={editImage}>Edit this Image</button>
-                <button onClick={saveImage}>Download this Image</button>
+                <button onClick={editImage}>Edit</button>
+                <button onClick={saveImage}>Download</button>
                 <button onClick={backToGallery}>Back to My Images</button>
-                <button onClick={deleteImage}>Delete this Image</button>
+                <button onClick={deleteImage}>Delete</button>
             </div>
            
         </div>
