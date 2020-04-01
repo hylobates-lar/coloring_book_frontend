@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-// import Sunflower from './Sunflower';
-// import Rose from './Rose';
 import Yosemite from './Yosemite';
 import Sequoia from './Sequoia';
 import Yosemite2 from './Yosemite2';
@@ -12,8 +10,6 @@ import Saguaro from './Saguaro';
 import Zion from './Zion';
 
 const components = {
-    // "Sunflower": Sunflower,
-    // "Rose": Rose,
     "Yosemite": Yosemite,
     "Yosemite2": Yosemite2,
     "Sequoia": Sequoia,

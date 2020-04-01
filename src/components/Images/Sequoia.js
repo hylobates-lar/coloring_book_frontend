@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Sequoia(props) {
-	let scaleStyle = {transform: "scale(.37)", transformOrigin: "15px 0px"}
+	let scaleStyle = {transform: "scale(.37)", transformOrigin: "15px 25px"}
 	let containerStyle = {width: "300px", height: "500px"}
     if (props.size === "large") {
 		scaleStyle = {transform: "scale(.75)", transformOrigin: "100px 100px"}
