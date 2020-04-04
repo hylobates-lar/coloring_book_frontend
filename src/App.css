@@ -1,9 +1,18 @@
 
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif; 
   }
+
+.main-content{
+  flex-grow: 1;
+}
   
   .background {
     background-image: url("https://cdn.visitutah.com/media/15894218/websocial_cedarbreaks_darksky-stock-photo-milky-way-rising-over-cedar-breaks-114906899-4.jpg?anchor=center&mode=crop&width=1140&height=760&rnd=131877744350000000&quality=86");
@@ -87,14 +96,16 @@ body {
 
 /* footer */
 
-/* #footer {
-  display: flex;
+#footer {
   background: rgba(0, 0, 0, .6);
   height: 1rem;
   padding: 1rem;
-  justify-content: center;
+  text-align: right;
   margin-bottom: 0;
-} */
+  color: white;
+  margin: 0;
+  font-size: small;
+}
 
 
 /* home page */

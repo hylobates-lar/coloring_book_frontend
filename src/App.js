@@ -49,6 +49,7 @@ const App = () => {
         <h1 id="logo">Color by Nature</h1>
         <NavBar/>
       </div>
+      <div className="main-content">
       <Switch>
         <Route path="/login" component={Auth} />
         <Route path="/logout" component={Logout} />
@@ -58,9 +59,10 @@ const App = () => {
         <Route path="/coloringpage/:id" component={ColoringPage} />
         <Route path="/featuredimage/:id" component={MyFeaturedImage} />
       </Switch>
-      {/* <div id="footer">
-        <h5 style={{color: "white"}}>Made by Alison Quaglia // 2020</h5>
-      </div> */}
+      </div>
+      <div id="footer">
+        Made by Alison Quaglia // 2020
+      </div>
     </div>
   )
 }

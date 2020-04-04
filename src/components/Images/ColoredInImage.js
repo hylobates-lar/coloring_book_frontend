@@ -8,6 +8,9 @@ import GrandCanyon from './GrandCanyon';
 import GrandTeton from './GrandTeton';
 import Saguaro from './Saguaro';
 import Zion from './Zion';
+import Canyonlands from './Canyonlands';
+import Everglades from './Everglades';
+import Yellowstone from './Yellowstone'
 
 const components = {
     "Yosemite": Yosemite,
@@ -18,7 +21,10 @@ const components = {
     "GrandCanyon": GrandCanyon,
     "GrandTeton": GrandTeton,
     "Saguaro": Saguaro,
-    "Zion": Zion
+    "Zion": Zion,
+    "Canyonlands": Canyonlands,
+    "Everglades": Everglades,
+    "Yellowstone": Yellowstone
 }
 
 export default function ColoredInImage(props) {
