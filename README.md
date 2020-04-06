@@ -2,13 +2,13 @@
 
 Welcome to Color by Nature: A National Parks Digital Coloring Book!
 
-I built this app for my Flatiron School final project with a desire to create something that brought together several things that I love: nature, color, visuals, interactivity, and creativity. I love how creativity and technology can come together to create amazing products that bring joy to users, and this was something I really wanted to explore. I also liked that this project pushed me to learn new tools that I hadn't experienced yet, such as working with svgs, Redux, React Hooks, Auth, and additional experience with custom CSS. 
+I built this app for my Flatiron School final project with a desire to create something that brought together several things I love: nature, color, visuals, interactivity, and creativity. I love how creativity and technology can come together to create amazing products that bring joy to users, and this was something I really wanted to explore. I also liked that this project pushed me to learn new tools that I hadn't experienced yet, such as working with svgs, Redux, React Hooks, Auth and additional experience with custom CSS. 
 
 Ideally I would also love to use this app to provide fundraising support for the National Parks Foundation. I am constantly in awe of the incredible natural beauty that exists within our national parks, and sincerely hope they will continue to remain protected forever. I would love for each completed/colored-in photo to trigger a small donation to support this cause.
 
  
 ## Screenshots
-Include logo/demo screenshot etc.
+![Screenshot](/readme-screenshot.png)
 
 
 ## Features
@@ -19,33 +19,34 @@ A user must be logged in to color, and the login will persist until the user cli
 
 A user can:
 
-- log in/create a new account
-- browse national parks coloring pages in the Image Gallery
-- select colors from the color palette to apply to their chosen image in the Coloring Page
-- save an image to their account (The image saves automatically to their account upon selection, and autosaves as each color is applied.)
-- view all of their saved images in a gallery (My Images)
-- edit a saved image
-- download a saved image directly to their device as a png
-- delete a saved image
+* log in/create a new account
+* browse national parks coloring pages in the Image Gallery
+* select colors from the color palette to apply to their chosen image in the Coloring Page
+* save an image to their account (The image saves automatically to their account upon selection, and autosaves as each color is applied.)
+* view all of their saved images in a gallery (My Images)
+* edit a saved image
+* download a saved image directly to their device as a png
+* delete a saved image
 
 
 ## Dev Tools
 
-<b>Front End</b>
+**Front End**
 
-- React.js
-- Redux
-- React Hooks
-- React Router
-- Auth
-- Custom CSS
+* React.js
+* Redux
+* React Hooks
+* React Router
+* Auth
+* Custom CSS
 
-<b>Back End</b>
 
-- Ruby on Rails
-- PostgreSQL
-- BCrypt
-- JWT
+**Back End**
+
+* Ruby on Rails
+* PostgreSQL
+* BCrypt
+* JWT
 
 
 ## Credits
