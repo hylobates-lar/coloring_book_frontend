@@ -1,4 +1,4 @@
-## Color by Nature
+# Color by Nature
 
 Welcome to Color by Nature: A National Parks Digital Coloring Book!
 
@@ -7,7 +7,7 @@ I built this app for my Flatiron School final project with a desire to create so
 Ideally I would also love to use this app to provide fundraising support for the National Parks Foundation. I am constantly in awe of the incredible natural beauty that exists within our national parks, and sincerely hope they will continue to remain protected forever. I would love for each completed/colored-in photo to trigger a small donation to support this cause.
 
  
-## Screenshots
+## Screenshot
 ![Screenshot](/readme-screenshot.png)
 
 
