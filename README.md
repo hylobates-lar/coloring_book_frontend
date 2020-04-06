@@ -1,68 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Color by Nature
 
-## Available Scripts
+Welcome to Color by Nature: A National Parks Digital Coloring Book!
 
-In the project directory, you can run:
+I built this app for my Flatiron School final project with a desire to create something that brought together several things that I love: nature, color, visuals, interactivity, and creativity. I love how creativity and technology can come together to create amazing products that bring joy to users, and this was something I really wanted to explore. I also liked that this project pushed me to learn new tools that I hadn't experienced yet, such as working with svgs, Redux, React Hooks, Auth, and additional experience with custom CSS. 
 
-### `yarn start`
+Ideally I would also love to use this app to provide fundraising support for the National Parks Foundation. I am constantly in awe of the incredible natural beauty that exists within our national parks, and sincerely hope they will continue to remain protected forever. I would love for each completed/colored-in photo to trigger a small donation to support this cause.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ 
+## Screenshots
+Include logo/demo screenshot etc.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+## Features
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Color by Nature allows a user to browse national parks coloring pages and select images to color however they wish. 
 
-### `yarn build`
+A user must be logged in to color, and the login will persist until the user clicks 'Logout'. A logged out or new user can view the Image Gallery without logging in, but if they select an image they will be re-directed to the Login page.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A user can:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- log in/create a new account
+- browse national parks coloring pages in the Image Gallery
+- select colors from the color palette to apply to their chosen image in the Coloring Page
+- save an image to their account (The image saves automatically to their account upon selection, and autosaves as each color is applied.)
+- view all of their saved images in a gallery (My Images)
+- edit a saved image
+- download a saved image directly to their device as a png
+- delete a saved image
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## Dev Tools
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<b>Front End</b>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React.js
+- Redux
+- React Hooks
+- React Router
+- Auth
+- Custom CSS
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<b>Back End</b>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Ruby on Rails
+- PostgreSQL
+- BCrypt
+- JWT
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Credits
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The coloring book images used within this app have been borrowed from several sources for demo purposes only. They have been minorly edited and transformed into svg's to allow for coloring functionality.
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
