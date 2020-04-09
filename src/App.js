@@ -61,7 +61,7 @@ const App = () => {
       </Switch>
       </div>
       <div id="footer">
-        Made by Alison Quaglia // 2020
+        created by <a href="https://github.com/hylobates-lar/coloring_book_frontend">@hylobates-lar</a> // 2020
       </div>
     </div>
   )

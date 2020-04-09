@@ -72,7 +72,7 @@ export default function Auth() {
             placeholder="Password"
             className="input"
           />
-          <input type="submit" id="submit-button"/>
+          <input type="submit" id="submit-button" value="Submit"/>
         </form>
         <hr style={{marginLeft: "10%", width: "80%"}}/>
         <div id="change-form-button">

@@ -2,7 +2,7 @@
 
 Welcome to Color by Nature: A National Parks Digital Coloring Book!
 
-I built this app for my Flatiron School final project with a desire to create something that brought together several things I love: nature, color, visuals, interactivity, and creativity. I love how creativity and technology can come together to create amazing products that bring joy to users, and this was something I really wanted to explore. I also liked that this project pushed me to learn new tools that I hadn't experienced yet, such as working with svgs, Redux, React Hooks, Auth and additional experience with custom CSS. 
+I built this app for my Flatiron School final project with a desire to create something that brought together several things I love: nature, color, visuals, interactivity, and creativity. I love how creativity and technology can come together to create amazing products that bring joy to users, and this was something I really wanted to explore. I also liked that this project pushed me to learn new tools that I hadn't experienced yet, such as working with SVGs, Redux, React Hooks, Auth and additional experience with custom CSS. 
 
 Ideally I would also love to use this app to provide fundraising support for the National Parks Foundation. I am constantly in awe of the incredible natural beauty that exists within our national parks, and sincerely hope they will continue to remain protected forever. I would love for each completed/colored-in photo to trigger a small donation to support this cause.
 
@@ -41,7 +41,7 @@ A user can:
 * Custom CSS
 
 
-**Back End**
+[**Back End**](https://github.com/hylobates-lar/coloring_book_backend)
 
 * Ruby on Rails
 * PostgreSQL
@@ -51,5 +51,5 @@ A user can:
 
 ## Credits
 
-The coloring book images used within this app have been borrowed from several sources for demo purposes only. They have been minorly edited and transformed into svg's to allow for coloring functionality.
+The coloring book images used within this app have been borrowed from several sources for demo purposes only. They have been minorly edited and transformed into SVG's to allow for coloring functionality.
 
