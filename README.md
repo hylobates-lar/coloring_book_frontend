@@ -51,5 +51,5 @@ A user can:
 
 ## Credits
 
-The coloring book images used within this app have been borrowed from several sources for demo purposes only. They have been minorly edited and transformed into SVG's to allow for coloring functionality.
+The coloring book images used within this app have been borrowed from several sources for demo purposes only. They have been minorly edited and transformed into SVGs to allow for coloring functionality.
 

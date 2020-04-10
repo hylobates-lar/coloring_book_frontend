@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { Redirect, withRouter } from "react-router-dom";
 
 
-const Logout = () => {
+function Logout() {
     const dispatch = useDispatch();
 
     dispatch({

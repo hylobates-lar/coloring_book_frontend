@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {useParams} from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import ColoredInImage from '../Images/ColoredInImage'
@@ -19,8 +19,9 @@ export default function ColoringPage() {
         })
         .then(r => r.json())
         .then(data => {
+            console.log("d", data)
             setUserImage(data)
-        })   
+        })
     }
     
     if (!userImage.id) {
@@ -55,11 +56,11 @@ export default function ColoringPage() {
             <ColorPalette currentColor={color} changeColor={setColor} />
             <div id="coloring-image-container" > 
                 <ColoredInImage size="large" component={userImage.image.component} onFill={onFillColor} fillColors={userImage.fill_colors}/>
-                <p style={{marginTop: "30px", marginBottom: "30px", color: "white"}}>*This image will save automatically, so color away! 👍</p>
+                <p class="auto-save-text" >* This image will save automatically, so color away! 👍</p>
             </div>
             <div className="image-description">
                 <h2 id="description-heading" >{currentImage.national_park} National Park</h2>
-                <hr></hr>
+                <hr />
                 <p><b>Established:</b> {currentImage.year}</p>
                 <p><b>Location:</b> {currentImage.location}</p>
                 <p>{currentImage.description}</p>    

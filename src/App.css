@@ -29,22 +29,28 @@ body {
     height: 100%;
   }
 
-  h2 {
+  h1, h2, h3 {
     text-align: center;
     color: white;
     margin-bottom: 20px;
-    margin-top: 35px;
+   
   }
 
-  h3 {
-      text-align: center;
-      color: white;
-      margin-bottom: 20px;
-      margin-top: 35px;
+  h1 {
+    font-size: 1.7em;
+    margin-top: 45px;
+  }
+
+  h2 {
+    font-size: 1.2em;
   }
 
   h4 {
     margin: 0;
+  }
+
+  hr {
+    color: white;
   }
 
   button {
@@ -131,6 +137,11 @@ a {
 
 /* home page */
 
+.home-title {
+  color: white; 
+  text-align: center;
+}
+
 .carousel-container {
   height: 600px;
   width: 900px;
@@ -145,14 +156,15 @@ a {
 
 .home-text {
   width: 900px;
-    margin-top: 90px;
-    margin-bottom: 90px;
-    text-align: justify;
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto; 
-    flex-direction: column;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto; 
+  flex-direction: column;
+  color: white;
 }
 
 /* login/signup page */
@@ -177,6 +189,16 @@ a {
 
 .form {
   margin-top: 10px;
+}
+
+.login-signup-title {
+  color: black; 
+  margin-bottom: 10px;
+}
+
+.form-divider {
+  margin-left: 10%; 
+  width: 80%;
 }
 
 .input {
@@ -211,7 +233,7 @@ a {
     justify-content: center;
   }
 
-  #image-card {
+  .image-card {
     text-align: center;
     background-color: white;
     border: rgb(207, 207, 207) solid 1px;
@@ -295,6 +317,12 @@ a {
   margin-bottom: 0px; 
   text-align: left; 
   font-size: 1.3em;
+}
+
+.auto-save-text {
+  margin-top: 30px; 
+  margin-bottom: 30px; 
+  color: white;
 }
 
 

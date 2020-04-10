@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default function Canyonlands(props) {
-	let scaleStyle = {transform: "scale(.2)", transformOrigin: "-5px 60px"}
-	let containerStyle = {width: "300px", height: "500px"}
+    let scaleStyle = {transform: "scale(.2)", transformOrigin: "-5px 60px"}
+    let containerStyle = {width: "300px", height: "500px"}
     if (props.size === "large") {
 		scaleStyle = {transform: "scale(.5)", transformOrigin: "0px 0px"}
 		containerStyle = {width: "700px", height: "500px"}

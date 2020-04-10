@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
-import ImageCard from './ImageCard.js';
+import React, { useEffect, dispatch } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import ImageCard from './ImageCard.js';
 
 
 export default function ImageGallery() {
@@ -22,13 +22,11 @@ export default function ImageGallery() {
     
     return (
         <div>
-            <h3>Choose an image to color!</h3>
+            <h1>Choose an image to color!</h1>
             <div id="image-gallery"> 
-                {images.map((image) => {
-                    return (
-                        <ImageCard id="image-card" image={image} key={image.id} />    
-                    )
-                })}
+                {images.map(image => 
+                    <ImageCard image={image} key={image.id} />
+                )}
             </div>
         </div>
     )

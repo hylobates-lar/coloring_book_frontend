@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
-import './App.css';
 import {Switch, Route} from 'react-router-dom';
 import {withRouter} from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import MyGallery from './components/UserGallery/MyGallery';
@@ -10,7 +10,7 @@ import ImageGallery from './components/ImageGallery/ImageGallery';
 import ColoringPage from './components/ImageGallery/ColoringPage';
 import Logout from './components/Logout';
 import Auth from './components/Auth';
-import { useDispatch } from 'react-redux';
+import './App.css';
 
 
 const App = () => {
@@ -27,7 +27,6 @@ const App = () => {
       .then(r => r.json())
       .then((resp) => {
         if (resp.user) {
-          localStorage.token = resp.token
           dispatch({
             type: 'SET_USER',
             payload: resp
@@ -50,15 +49,15 @@ const App = () => {
         <NavBar/>
       </div>
       <div className="main-content">
-      <Switch>
-        <Route path="/login" component={Auth} />
-        <Route path="/logout" component={Logout} />
-        <Route path="/mygallery" component={MyGallery} />
-        <Route path="/" exact component={ Home } />
-        <Route path="/images" exact component={ImageGallery} />
-        <Route path="/coloringpage/:id" component={ColoringPage} />
-        <Route path="/featuredimage/:id" component={MyFeaturedImage} />
-      </Switch>
+        <Switch>
+          <Route path="/login" component={Auth} />
+          <Route path="/logout" component={Logout} />
+          <Route path="/mygallery" component={MyGallery} />
+          <Route path="/" exact component={ Home } />
+          <Route path="/images" exact component={ImageGallery} />
+          <Route path="/coloringpage/:id" component={ColoringPage} />
+          <Route path="/featuredimage/:id" component={MyFeaturedImage} />
+        </Switch>
       </div>
       <div id="footer">
         created by <a href="https://github.com/hylobates-lar/coloring_book_frontend">@hylobates-lar</a> // 2020

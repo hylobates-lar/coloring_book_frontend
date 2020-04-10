@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {useParams, useHistory} from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import ColoredInImage from '../Images/ColoredInImage';
 import {saveSvgAsPng} from 'save-svg-as-png';
 import swal from 'sweetalert';
+import ColoredInImage from '../Images/ColoredInImage';
 
 
 
@@ -50,9 +50,9 @@ export default function MyFeaturedImage(props) {
                     dispatch({
                         type: 'SET_IMAGES',
                         payload: data
-                      });
-                      swal("Image Deleted", "This image has been removed from your gallery", "success");
-                      history.push(`/mygallery`)
+                    });
+                    swal("Image Deleted", "This image has been removed from your gallery", "success");
+                    history.push(`/mygallery`)
                 })        
             }
           });
@@ -73,8 +73,8 @@ export default function MyFeaturedImage(props) {
 
     return(
         <div className="featured-image-page">
-            <div id="quote">
-                <p style={{marginTop: "3"}}>"Our task must be to free ourselves by widening our circle of compassion to embrace all living creatures and the whole of nature and its beauty."<b> - Albert Einstein</b></p>
+            <div id="quote" >
+                <p >"Our task must be to free ourselves by widening our circle of compassion to embrace all living creatures and the whole of nature and its beauty."<b> - Albert Einstein</b></p>
             </div>
             <div className="featured-image-container">
                 <ColoredInImage size={'large'} component={userImage.image.component}  fillColors={userImage.fill_colors}/>
