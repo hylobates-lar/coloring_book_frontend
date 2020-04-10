@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default function Yellowstone(props) {
-let scaleStyle = {transform: "scale(.21)", transformOrigin: "20px -20px"}
-let containerStyle = {width: "300px", height: "500px"}
+    let scaleStyle = {transform: "scale(.21)", transformOrigin: "20px -20px"}
+    let containerStyle = {width: "300px", height: "500px"}
     if (props.size === "large") {
 		scaleStyle = {transform: "scale(.5)", transformOrigin: "0px 0px"}
 		containerStyle = {width: "582px", height: "750px"}

@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default function Zion(props) {
-let scaleStyle = {transform: "scale(.235)", transformOrigin: "-1px -50px"}
-let containerStyle = {width: "300px", height: "500px"}
+	let scaleStyle = {transform: "scale(.235)", transformOrigin: "-1px -50px"}
+	let containerStyle = {width: "300px", height: "500px"}
     if (props.size === "large") {
 		scaleStyle = {transform: "scale(.45)", transformOrigin: "0px 0px"}
 		containerStyle = {width: "523px", height: "675px"}

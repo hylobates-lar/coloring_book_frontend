@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default function Yosemite(props) {
-let scaleStyle = {transform: "scale(.45)", transformOrigin: "-4px -50px"}
-let containerStyle = {width: "300px", height: "500px"}
+	let scaleStyle = {transform: "scale(.45)", transformOrigin: "-4px -50px"}
+	let containerStyle = {width: "300px", height: "500px"}
     if (props.size === "large") {
 		scaleStyle = {transform: "scale(.9)", transformOrigin: "-100px -100px"}
 		containerStyle = {width: "524px", height: "690px"}

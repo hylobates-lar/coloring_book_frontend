@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default function Glacier(props) {
-let scaleStyle = {transform: "scale(.235)", transformOrigin: "28px 0px"}
-let containerStyle = {width: "300px", height: "500px"}
+	let scaleStyle = {transform: "scale(.235)", transformOrigin: "28px 0px"}
+	let containerStyle = {width: "300px", height: "500px"}
     if (props.size === "large") {
 		scaleStyle = {transform: "scale(.46)", transformOrigin: "0px 0px"}
 		containerStyle = {width: "447px", height: "597px"}
