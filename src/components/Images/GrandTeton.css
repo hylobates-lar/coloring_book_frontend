@@ -1,0 +1,32 @@
+.grand-teton-container {
+    width: 300px;
+    height: 500px;
+}
+
+.grand-teton-image {
+    transform: scale(.21); 
+    transform-origin: 16px 0px;
+}
+
+.grand-teton-container.large {
+    width: 558px; 
+    height: 720px;
+}
+
+.grand-teton-container.large .grand-teton-image {
+    transform: scale(.48); 
+    transform-origin: 0px 0px;
+}
+
+@media only screen 
+  and (max-width: 480px) {
+    .grand-teton-container.large {
+        width: 349px; 
+        height: 450px;
+    }
+    
+    .grand-teton-container.large .grand-teton-image {
+        transform: scale(.3); 
+        transform-origin: 0px 0px;
+    }
+}

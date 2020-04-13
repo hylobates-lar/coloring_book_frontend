@@ -1,17 +1,12 @@
 import React from 'react';
+import './GrandTeton.css';
 
 export default function GrandTeton(props) {
-    let scaleStyle = {transform: "scale(.21)", transformOrigin: "16px 0px"}
-    let containerStyle = {width: "300px", height: "500px"}
-    if (props.size === "large") {
-		scaleStyle = {transform: "scale(.48)", transformOrigin: "0px 0px"}
-		containerStyle = {width: "558px", height: "720px"}
-    }
-    
+
     return (
-        <div style={containerStyle}>
+        <div className={`grand-teton-container ${props.size}`}>
             <svg  xmlns="http://www.w3.org/2000/svg" id={props.id}>
-            <g style={scaleStyle}>
+            <g className="grand-teton-image">
         
             <path onClick={() => props.onFill(0)} fill={props.fillColors[0]}  d="M1164,1388c0,37.667,0,75.333,0,113c-46.667,0-93.333,0-140,0c-2.057-1.034-4.255-0.47-6.374-0.47
                 c-336.307-0.032-672.612-0.03-1008.919-0.037c-2.152,0-4.315,0.143-7.207-0.26c0-91.083,0-182.122,0-273.266

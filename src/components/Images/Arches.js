@@ -1,17 +1,12 @@
 import React from 'react';
+import './Arches.css';
 
 export default function Arches(props) {
-    let scaleStyle = {transform: "scale(.235)", transformOrigin: "-5px -20px"}
-    let containerStyle = {width: "300px", height: "500px"}
-    if (props.size === "large") {
-		scaleStyle = {transform: "scale(.5)", transformOrigin: "0px 0px"}
-		containerStyle = {width: "582px", height: "750px"}
-    }
     
     return (
-        <div style={containerStyle}>
+        <div className={`arches-container ${props.size}`}>
 		    <svg  xmlns="http://www.w3.org/2000/svg" id={props.id}>
-		    <g style={scaleStyle}>
+		    <g className="arches-image">
        
             <path d="M1164,1501c-387.666,0-775.333,0-1163,0C1,1001,1,501,1,1.001C388.666,1,776.333,1,1163.999,1
                 C1164,501,1164,1001,1164,1501z"/>

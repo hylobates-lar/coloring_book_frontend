@@ -1,0 +1,32 @@
+.everglades-container {
+    width: 300px;
+    height: 500px;
+}
+
+.everglades-image {
+    transform: scale(.21); 
+    transform-origin: 20px -20px;
+}
+
+.everglades-container.large {
+    width: 582px; 
+    height: 750px;
+}
+
+.everglades-container.large .everglades-image {
+    transform: scale(.5); 
+    transform-origin: 0px 0px;
+}
+
+@media only screen 
+  and (max-width: 480px) {
+    .everglades-container.large {
+        width: 349px; 
+        height: 450px;
+    }
+    
+    .everglades-container.large .everglades-image {
+        transform: scale(.3); 
+        transform-origin: 0px 0px;
+    }
+}
