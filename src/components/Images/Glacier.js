@@ -1,17 +1,12 @@
 import React from 'react';
+import './Glacier.css';
 
 export default function Glacier(props) {
-	let scaleStyle = {transform: "scale(.235)", transformOrigin: "28px 0px"}
-	let containerStyle = {width: "300px", height: "500px"}
-    if (props.size === "large") {
-		scaleStyle = {transform: "scale(.46)", transformOrigin: "0px 0px"}
-		containerStyle = {width: "447px", height: "597px"}
-    }
     
     return (
-		<div style={containerStyle}>
+		<div className={`glacier-container ${props.size}`}>
 			<svg  xmlns="http://www.w3.org/2000/svg" id={props.id}>
-			<g style={scaleStyle}>
+			<g className="glacier-image">
 	
 			<path d="M971.81,725c0,3.67,0,7.33,0,11c-2.07,5.68-5.99,11.43-5.77,17.01c0.29,7.72,3.7,15.33,5.77,22.99c0,2.67,0,5.33,0,8
 				c-4.16,0.25-8.43,1.19-12.46,0.58c-4.31-0.65-4.53,1.22-4.22,4.31c0.29,2.8,1.09,5.62,0.88,8.37c-0.34,4.48,1.86,4.95,5.43,4.51

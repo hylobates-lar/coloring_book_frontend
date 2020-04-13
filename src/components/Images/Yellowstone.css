@@ -1,0 +1,32 @@
+.yellowstone-container {
+    width: 300px;
+    height: 500px;
+}
+
+.yellowstone-image {
+    transform: scale(.21); 
+    transform-origin: 20px -20px;
+}
+
+.yellowstone-container.large {
+    width: 582px; 
+    height: 750px;
+}
+
+.yellowstone-container.large .yellowstone-image {
+    transform: scale(.5); 
+    transform-origin: 0px 0px;
+}
+
+@media only screen 
+  and (max-width: 480px) {
+    .yellowstone-container.large {
+        width: 349px; 
+        height: 450px;
+    }
+    
+    .yellowstone-container.large .yellowstone-image {
+        transform: scale(.3); 
+        transform-origin: 0px 0px;
+    }
+}

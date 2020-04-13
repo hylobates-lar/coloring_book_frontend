@@ -1,0 +1,32 @@
+.glacier-container {
+    width: 300px;
+    height: 500px;
+}
+
+.glacier-image {
+    transform: scale(.235); 
+    transform-origin: 28px 0px;
+}
+
+.glacier-container.large {
+    width: 447px; 
+    height: 597px;
+}
+
+.glacier-container.large .glacier-image {
+    transform: scale(.46); 
+    transform-origin: 0px 0px;
+}
+
+@media only screen 
+  and (max-width: 480px) {
+    .glacier-container.large {
+        width: 350px; 
+        height: 467px;
+    }
+    
+    .glacier-container.large .glacier-image {
+        transform: scale(.36); 
+        transform-origin: 0px 0px;
+    }
+}

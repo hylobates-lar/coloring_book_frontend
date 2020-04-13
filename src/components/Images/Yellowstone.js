@@ -1,17 +1,12 @@
 import React from 'react';
+import './Yellowstone.css';
 
 export default function Yellowstone(props) {
-    let scaleStyle = {transform: "scale(.21)", transformOrigin: "20px -20px"}
-    let containerStyle = {width: "300px", height: "500px"}
-    if (props.size === "large") {
-		scaleStyle = {transform: "scale(.5)", transformOrigin: "0px 0px"}
-		containerStyle = {width: "582px", height: "750px"}
-    }
     
     return (
-        <div style={containerStyle}>
+        <div className={`yellowstone-container ${props.size}`}>
             <svg  xmlns="http://www.w3.org/2000/svg" id={props.id}>
-            <g style={scaleStyle}>
+            <g className="yellowstone-image">
        
             <path d="M1162.41,1499.5c-387.26,0-774.52,0-1161.79,0c0-499.65,0-999.29,0-1498.94c387.26,0,774.52,0,1161.79,0
                 C1162.41,500.21,1162.41,999.85,1162.41,1499.5z M348.34,195.41c0,0,0.09-0.04,0.09-0.04c0.32,0.36,0.65,0.72,0.97,1.08

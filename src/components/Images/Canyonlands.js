@@ -1,17 +1,12 @@
 import React from 'react';
+import './Canyonlands.css';
 
 export default function Canyonlands(props) {
-    let scaleStyle = {transform: "scale(.2)", transformOrigin: "-5px 60px"}
-    let containerStyle = {width: "300px", height: "500px"}
-    if (props.size === "large") {
-		scaleStyle = {transform: "scale(.5)", transformOrigin: "0px 0px"}
-		containerStyle = {width: "700px", height: "500px"}
-    }
-    
+ 
     return (
-        <div style={containerStyle}>
+        <div className={`canyonlands-container ${props.size}`}>
             <svg  xmlns="http://www.w3.org/2000/svg" id={props.id}>
-            <g style={scaleStyle}>
+            <g className="canyonlands-image">
         
             <path onClick={() => props.onFill(0)} fill={props.fillColors[0]} d="M1399.5,206c0,45,0,90,0,135c-3.46,0.2-6.93,0.34-10.39,0.62c-5.77,0.46-11.53,1.01-17.3,1.49
                 c-3.09,0.26-6.19,0.66-9.28,0.61c-4.81-0.09-9.61-0.78-14.41-0.73c-10.64,0.11-21.29,0.95-31.9,0.6

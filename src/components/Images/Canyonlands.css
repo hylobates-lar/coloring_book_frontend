@@ -1,0 +1,32 @@
+.canyonlands-container {
+    width: 300px;
+    height: 500px;
+}
+
+.canyonlands-image {
+    transform: scale(.2); 
+    transform-origin: -5px 60px;
+}
+
+.canyonlands-container.large {
+    width: 700px; 
+    height: 500px;
+}
+
+.canyonlands-container.large .canyonlands-image {
+    transform: scale(.5); 
+    transform-origin: 0px 0px;
+}
+
+@media only screen 
+  and (max-width: 480px) {
+    .canyonlands-container.large {
+        width: 350px; 
+        height: 250px;
+    }
+    
+    .canyonlands-container.large .canyonlands-image {
+        transform: scale(.25); 
+        transform-origin: 0px 0px;
+    }
+}

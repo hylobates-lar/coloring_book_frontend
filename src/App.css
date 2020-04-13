@@ -483,7 +483,7 @@ input {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 1rem;
-        margin: 30px 0px;
+        margin: 35px 0px;
         top: auto;
         right: auto;
     }
