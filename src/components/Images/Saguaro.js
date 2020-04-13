@@ -1,17 +1,12 @@
 import React from 'react';
+import './Saguaro.css';
 
 export default function Saguaro(props) {
-	let scaleStyle = {transform: "scale(.23)", transformOrigin: "1px -50px"}
-	let containerStyle = {width: "300px", height: "500px"}
-    if (props.size === "large") {
-		scaleStyle = {transform: "scale(.46)", transformOrigin: "0px 0px"}
-		containerStyle = {width: "535px", height: "690px"}
-    }
     
     return (
-		<div style={containerStyle}>
+		<div className={`saguaro-container ${props.size}`}>
 			<svg  xmlns="http://www.w3.org/2000/svg" id={props.id}>
-			<g style={scaleStyle}>
+			<g className="saguaro-image">
 	
 			<path d="M1162.5,1422.54c0,25.65,0,51.31,0,76.96c-387.19,0-774.38,0-1161.56,0c0-499.75,0-999.5,0-1499.25
 				c387.19,0,774.38,0,1161.56,0c0,467.43,0,934.87,0,1402.3c-0.37-2.34-1.05-4.68-1.06-7.02c-0.09-17.62-0.05-35.25-0.05-52.88

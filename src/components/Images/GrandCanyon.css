@@ -1,0 +1,32 @@
+.grand-canyon-container {
+    width: 300px;
+    height: 500px;
+}
+
+.grand-canyon-image {
+    transform: scale(.23); 
+    transform-origin: 0px 70px;
+}
+
+.grand-canyon-container.large {
+    width: 720px; 
+    height: 514px;
+}
+
+.grand-canyon-container.large .grand-canyon-image {
+    transform: scale(.6); 
+    transform-origin: 0px 0px;
+}
+
+@media only screen 
+  and (max-width: 480px) {
+    .grand-canyon-container.large {
+        width: 351px; 
+        height: 251px;
+    }
+    
+    .grand-canyon-container.large .grand-canyon-image {
+        transform: scale(.292); 
+        transform-origin: 0px 0px;
+    }
+}

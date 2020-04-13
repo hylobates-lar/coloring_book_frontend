@@ -1,0 +1,32 @@
+.zion-container {
+    width: 300px;
+    height: 500px;
+}
+
+.zion-image {
+    transform: scale(.235); 
+    transform-origin: -1px -50px;
+}
+
+.zion-container.large {
+    width: 523px; 
+    height: 675px;
+}
+
+.zion-container.large .zion-image {
+    transform: scale(.45); 
+    transform-origin: 0px 0px;
+}
+
+@media only screen 
+  and (max-width: 480px) {
+    .zion-container.large {
+        width: 349px; 
+        height: 450px;
+    }
+    
+    .zion-container.large .zion-image {
+        transform: scale(.3); 
+        transform-origin: 0px 0px;
+    }
+}

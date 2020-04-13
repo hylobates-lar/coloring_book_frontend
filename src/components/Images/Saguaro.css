@@ -1,0 +1,32 @@
+.saguaro-container {
+    width: 300px;
+    height: 500px;
+}
+
+.saguaro-image {
+    transform: scale(.23); 
+    transform-origin: 1px -50px;
+}
+
+.saguaro-container.large {
+    width: 535px; 
+    height: 690px;
+}
+
+.saguaro-container.large .saguaro-image {
+    transform: scale(.46); 
+    transform-origin: 0px 0px;
+}
+
+@media only screen 
+  and (max-width: 480px) {
+    .saguaro-container.large {
+        width: 349px; 
+        height: 450px;
+    }
+    
+    .saguaro-container.large .saguaro-image {
+        transform: scale(.3); 
+        transform-origin: 0px 0px;
+    }
+}

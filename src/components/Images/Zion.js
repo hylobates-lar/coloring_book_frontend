@@ -1,17 +1,12 @@
 import React from 'react';
+import './Zion.css';
 
 export default function Zion(props) {
-	let scaleStyle = {transform: "scale(.235)", transformOrigin: "-1px -50px"}
-	let containerStyle = {width: "300px", height: "500px"}
-    if (props.size === "large") {
-		scaleStyle = {transform: "scale(.45)", transformOrigin: "0px 0px"}
-		containerStyle = {width: "523px", height: "675px"}
-    }
     
     return (
-    	<div style={containerStyle}>
+    	<div className={`zion-container ${props.size}`}>
 			<svg  xmlns="http://www.w3.org/2000/svg" id={props.id}>
-			<g style={scaleStyle}>
+			<g className="zion-image">
 	
 			<path d="M0.72,0.63c387.26,0,774.52,0,1161.78,0c0,499.71,0,999.41,0,1499.12c-387.26,0-774.52,0-1161.78,0
 				C0.72,1000.04,0.72,500.34,0.72,0.63z M95.63,1060.98c2.02-2.11,0.66-5.89,4.12-7.21c-1.27-1.02-2.15-1.72-3.4-2.72

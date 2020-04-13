@@ -1,17 +1,12 @@
 import React from 'react';
+import './GrandCanyon.css';
 
 export default function GrandCanyon(props) {
-	let scaleStyle = {transform: "scale(.23)", transformOrigin: "0px 70px"}
-	let containerStyle = {width: "300px", height: "500px"}
-    if (props.size === "large") {
-		scaleStyle = {transform: "scale(.6)", transformOrigin: "0px 0px"}
-		containerStyle = {width: "720px", height: "514px"}
-    }
     
     return (
-		<div style={containerStyle}>
+		<div className={`grand-canyon-container ${props.size}`}>
 			<svg  xmlns="http://www.w3.org/2000/svg" id={props.id}>
-			<g style={scaleStyle}>
+			<g className="grand-canyon-image">
 	
 			<path onClick={() => props.onFill(0)} fill={props.fillColors[0]} d="M0,857C0,571.37,0,285.74,0,0c399.9,0,799.86,0,1200,0c0,285.6,0,571.3,0,857C800.11,857,400.08,857,0,857
 				z M1196.83,851.1c0.16-2.61,0.43-4.88,0.43-7.16c-0.03-78-0.12-156.01-0.13-234.01c-0.02-199.18-0.02-398.35,0.1-597.53
