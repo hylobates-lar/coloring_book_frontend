@@ -14,7 +14,7 @@ export default function NavBar() {
     
     return (
         <>
-        <img src="/white-hamburger-menu.png" id="hamburger-menu" onClick={toggleActive}/>
+        <img src="/white-hamburger-menu.png" alt="mobile menu" id="hamburger-menu" onClick={toggleActive}/>
         {(!token) ?
             ( 
             <ul className={`nav-bar ${activeClass}`}>

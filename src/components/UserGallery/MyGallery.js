@@ -11,8 +11,10 @@ export default function MyGallery() {
     const history = useHistory();
     const [userImages, setUserImages] = useState([]);
     const [fetched, setFetched] = useState(false);
-    const [loadingMessage, setLoadingMessage] = useState("Loading...")
-  
+      
+    if(!localStorage.getItem("token")){
+        history.push("/login")
+    }
     
     if(token && !fetched){
         fetch(`http://localhost:3000/user_images`,
@@ -23,25 +25,21 @@ export default function MyGallery() {
         .then(data => {
             setUserImages(data)
             setFetched(true)
-            if (data.length == 0) {
-                setLoadingMessage("No images found")
-            }
         }) 
     } 
-      
-    if(!localStorage.getItem("token")){
-        history.push("/login")
-    }
     
     return (
         <div>
             {user && <h1>{user.username}'s Gallery</h1>}
-                {userImages.length === 0 ? 
-                <LoadingSpinner /> :
+            {!fetched ? <LoadingSpinner /> : 
+                userImages.length === 0 ? 
+                    <h2>No images yet!</h2>
+                 :
                     <div id="my-gallery">
                         {userImages.map(userImageObj => <MyImageCard id="my-image-card" key={userImageObj.id} userImage={userImageObj} />)}
                     </div>
                 }
+            }
         </div>
     );
     

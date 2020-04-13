@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {useParams} from 'react-router-dom';
+import {useParams, useHistory} from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import ColoredInImage from '../Images/ColoredInImage'
 import ColorPalette from './ColorPalette';
@@ -13,20 +13,34 @@ export default function ColoringPage() {
     const {token} = useSelector(state => state.auth);
     const [userImage, setUserImage] = useState({});
     const [color, setColor] = useState("blue");
+    const [fetched, setFetched] = useState(false);
+    const history = useHistory();
+    
+    if(!localStorage.getItem("token")){
+        history.push("/login")
+    }
 
-    if (token && !userImage.id) {
+    if (token && !fetched) {
         fetch(`http://localhost:3000/user_images/${id}`,{
             headers: {'Authorization': `bearer ${token}`}
         })
         .then(r => r.json())
         .then(data => {
-            console.log("d", data)
             setUserImage(data)
+            setFetched(true)
         })
     }
     
-    if (!userImage.id) {
-        return <LoadingSpinner />
+    if (!fetched) {
+        return(
+           <LoadingSpinner />
+        )
+    }
+
+    if (fetched && !userImage.id) {
+        return (
+            <h1>Image not found</h1>
+        )
     }
 
 

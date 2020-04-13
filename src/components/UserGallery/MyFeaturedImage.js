@@ -12,23 +12,34 @@ export default function MyFeaturedImage(props) {
     let {id} = useParams();
     const {token} = useSelector(state => state.auth);
     const [userImage, setUserImage] = useState({});
+    const [fetched, setFetched] = useState(false);
     const history = useHistory();
     const dispatch = useDispatch();
     
+    if(!localStorage.getItem("token")){
+        history.push("/login")
+    }
     
-    if (token && !userImage.id) {
+    if (token && !fetched) {
         fetch(`http://localhost:3000/user_images/${id}`,{
             headers: {'Authorization': `bearer ${token}`}
         })
         .then(r => r.json())
         .then(data => {
             setUserImage(data)
+            setFetched(true)
         })   
     }
 
-    if (!token || !userImage.id) {
+    if (!fetched) {
         return(
            <LoadingSpinner />
+        )
+    }
+
+    if (fetched && !userImage.id) {
+        return (
+            <h1>Image not found</h1>
         )
     }
 
