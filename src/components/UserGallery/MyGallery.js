@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
 import { useSelector } from 'react-redux';
 import MyImageCard from './MyImageCard';
+import LoadingSpinner from '../LoadingSpinner';
 
 
 export default function MyGallery() {
@@ -35,12 +36,12 @@ export default function MyGallery() {
     return (
         <div>
             {user && <h1>{user.username}'s Gallery</h1>}
-            <div id="my-gallery">
                 {userImages.length === 0 ? 
-                    <h2>{loadingMessage}</h2> :
-                    userImages.map(userImageObj => <MyImageCard id="my-image-card" key={userImageObj.id} userImage={userImageObj} />)
+                <LoadingSpinner /> :
+                    <div id="my-gallery">
+                        {userImages.map(userImageObj => <MyImageCard id="my-image-card" key={userImageObj.id} userImage={userImageObj} />)}
+                    </div>
                 }
-            </div>
         </div>
     );
     

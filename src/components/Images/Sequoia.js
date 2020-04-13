@@ -1,17 +1,12 @@
 import React from 'react';
+import './Sequoia.css';
 
 export default function Sequoia(props) {
-	let scaleStyle = {transform: "scale(.37)", transformOrigin: "15px 25px"}
-	let containerStyle = {width: "300px", height: "500px"}
-    if (props.size === "large") {
-		scaleStyle = {transform: "scale(.75)", transformOrigin: "100px 100px"}
-		containerStyle = {width: "571px", height: "571px"}
-    }
    
     return (
-		<div style={containerStyle}>
+		<div className={`sequoia-container ${props.size}`} >
 			<svg  xmlns="http://www.w3.org/2000/svg" id={props.id}>
-			<g style={scaleStyle}>
+			<g className="sequoia-image">
 				
 			<path onClick={() => props.onFill(0)} fill={props.fillColors[0]} d="M-39.601-19.425c253.949,0,507.898,0,761.847,0c0,253.949,0,507.898,0,761.847
 				c-253.948,0-507.898,0-761.847,0C-39.601,488.474-39.601,234.524-39.601-19.425z"/>

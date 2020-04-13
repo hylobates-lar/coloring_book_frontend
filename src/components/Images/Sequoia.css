@@ -1,0 +1,32 @@
+.sequoia-container {
+    width: 300px;
+    height: 500px;
+}
+
+.sequoia-image {
+    transform: scale(.37); 
+    transform-origin: 15px 25px;
+}
+
+.sequoia-container.large {
+    width: 571px; 
+    height: 571px;
+}
+
+.sequoia-container.large .sequoia-image {
+    transform: scale(.75); 
+    transform-origin: 100px 100px;
+}
+
+@media only screen 
+  and (max-width: 480px) {
+    .sequoia-container.large {
+        width: 351px; 
+        height: 351px;
+    }
+    
+    .sequoia-container.large .sequoia-image {
+        transform: scale(.47); 
+        transform-origin: 26px 0px;
+    }
+  }

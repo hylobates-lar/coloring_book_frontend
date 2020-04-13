@@ -3,6 +3,7 @@ import {useParams} from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import ColoredInImage from '../Images/ColoredInImage'
 import ColorPalette from './ColorPalette';
+import LoadingSpinner from '../LoadingSpinner';
 
 
 
@@ -25,7 +26,7 @@ export default function ColoringPage() {
     }
     
     if (!userImage.id) {
-        return <h2>Loading...</h2>
+        return <LoadingSpinner />
     }
 
 

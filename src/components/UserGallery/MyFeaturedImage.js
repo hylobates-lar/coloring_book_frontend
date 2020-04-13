@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import {saveSvgAsPng} from 'save-svg-as-png';
 import swal from 'sweetalert';
 import ColoredInImage from '../Images/ColoredInImage';
+import LoadingSpinner from '../LoadingSpinner';
 
 
 
@@ -27,7 +28,7 @@ export default function MyFeaturedImage(props) {
 
     if (!token || !userImage.id) {
         return(
-            <h2>Loading...</h2>
+           <LoadingSpinner />
         )
     }
 
