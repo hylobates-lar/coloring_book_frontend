@@ -1,0 +1,32 @@
+.yosemite-container {
+    width: 300px;
+    height: 500px;
+}
+
+.yosemite-image {
+    transform: scale(.45); 
+    transform-origin: -4px -50px;
+}
+
+.yosemite-container.large {
+    width: 524px; 
+    height: 690px;
+}
+
+.yosemite-container.large .yosemite-image {
+    transform: scale(.9); 
+    transform-origin: -100px -100px;
+}
+
+@media only screen 
+  and (max-width: 480px) {
+    .yosemite-container.large {
+        width: 350px; 
+        height: 460px;
+    }
+    
+    .yosemite-container.large .yosemite-image {
+        transform: scale(.6); 
+        transform-origin: -23px -17px;
+    }
+}

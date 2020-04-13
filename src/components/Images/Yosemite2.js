@@ -1,17 +1,12 @@
 import React from 'react';
+import './Yosemite2.css';
 
 export default function Yosemite2(props) {
-    let scaleStyle = {transform: "scale(.22)", transformOrigin: "-10px 70px"}
-    let containerStyle = {width: "300px", height: "500px"}
-    if (props.size === "large") {
-		scaleStyle = {transform: "scale(.55)", transformOrigin: "0px 0px"}
-		containerStyle = {width: "704px", height: "513px"}
-    }
     
     return (
-        <div style={containerStyle}> 
+        <div className={`yosemite2-container ${props.size}`}> 
             <svg  xmlns="http://www.w3.org/2000/svg" id={props.id}>
-            <g style={scaleStyle}>
+            <g className="yosemite2-image">
 
             <path d="M1281-5.111c0,1.333,0,2.667,0,4c-4.633-0.803-9.311-0.081-13.952-0.398c-3.174-0.217-5.653,0.753-8.164,2.803
                 c-16.134,13.169-31.935,26.75-48.46,39.439c-3.354,2.575-5.992,5.78-8.02,9.472c-4.629,8.431-11.854,14.009-20.507,17.507
