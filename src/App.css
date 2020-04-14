@@ -181,8 +181,7 @@ a {
 .form-page {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 150px;
-    max-width: 325px;
+    width: 325px;
     height: 330px;
     border: 1px solid rgb(196, 196, 196);
     border-radius: 5px;
@@ -237,6 +236,8 @@ input {
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 
@@ -417,7 +418,7 @@ input {
 
 /* mobile responsive */
 
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
 
     .main-content {
         padding: 0 12px;
