@@ -418,7 +418,7 @@ input {
 
 /* mobile responsive */
 
-@media (max-width: 480px) {
+@media (max-width: 490px) {
 
     .main-content {
         padding: 0 12px;

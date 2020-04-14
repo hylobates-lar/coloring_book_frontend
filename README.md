@@ -2,10 +2,12 @@
 
 Welcome to Color by Nature: A National Parks Digital Coloring Book!
 
-I built this app for my Flatiron School final project with a desire to create something that brought together several things I love: nature, color, visuals, interactivity, and creativity. I love how creativity and technology can come together to create amazing products that bring joy to users, and this was something I really wanted to explore. I also liked that this project pushed me to learn new tools that I hadn't experienced yet, such as working with SVGs, Redux, React Hooks, Auth and additional experience with custom CSS. 
+I created this app with a desire to build something that brought together several things I love: nature, color, visuals, interactivity, and creativity. I love how creativity and technology can come together to create amazing products that bring joy to users, and this was something I really wanted to explore. I also liked that this project pushed me to learn new tools that I hadn't experienced yet, such as working with SVGs, Redux, React Hooks, Auth and additional experience with custom CSS. 
 
-Ideally I would also love to use this app to provide fundraising support for the National Parks Foundation. I am constantly in awe of the incredible natural beauty that exists within our national parks, and sincerely hope they will continue to remain protected forever. I would love for each completed/colored-in photo to trigger a small donation to support this cause.
+Ideally I would also love to use this app to provide fundraising support for the National Parks Foundation. I am constantly in awe of the incredible natural beauty that exists within the national parks, and sincerely hope they will continue to remain protected forever. I would love for each completed/colored-in photo to trigger a small donation to support this cause.
 
+[**Live Site**](https://color-by-nature.herokuapp.com/)
+ 
  
 ## Screenshot
 ![Screenshot](/readme-screenshot.png)
