@@ -1,6 +1,7 @@
 import React, { useEffect, dispatch } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import ImageCard from './ImageCard.js';
+import LoadingSpinner from '../LoadingSpinner.js';
 
 
 export default function ImageGallery() {
@@ -21,14 +22,19 @@ export default function ImageGallery() {
 
     
     return (
-        <div>
-            <h1>Choose an image to color!</h1>
-            <div id="image-gallery"> 
-                {images.map(image => 
-                    <ImageCard image={image} key={image.id} />
-                )}
+        <>
+            {images.length === 0 ?
+            <LoadingSpinner /> :
+            <div>
+                <h1>Choose an image to color!</h1>
+                <div id="image-gallery"> 
+                    {images.map(image => 
+                        <ImageCard image={image} key={image.id} />
+                    )}
+                </div> 
             </div>
-        </div>
+            }
+        </>
     )
 }
 

@@ -159,7 +159,7 @@ a {
 }
 
 .carousel.carousel-slider button.control-arrow {
-    top: 50%;
+    display: block;
 }
 
 .home-text {
