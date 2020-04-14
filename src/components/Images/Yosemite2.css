@@ -19,7 +19,7 @@
 }
 
 @media only screen 
-  and (max-width: 480px) {
+  and (max-width: 490px) {
     .yosemite2-container.large {
         width: 351px; 
         height: 252px;

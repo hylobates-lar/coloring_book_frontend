@@ -19,7 +19,7 @@
 }
 
 @media only screen 
-  and (max-width: 480px) {
+  and (max-width: 490px) {
     .grand-canyon-container.large {
         width: 351px; 
         height: 251px;

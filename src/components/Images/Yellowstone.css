@@ -19,7 +19,7 @@
 }
 
 @media only screen 
-  and (max-width: 480px) {
+  and (max-width: 490px) {
     .yellowstone-container.large {
         width: 349px; 
         height: 450px;

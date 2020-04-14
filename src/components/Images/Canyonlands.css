@@ -19,7 +19,7 @@
 }
 
 @media only screen 
-  and (max-width: 480px) {
+  and (max-width: 490px) {
     .canyonlands-container.large {
         width: 350px; 
         height: 250px;
