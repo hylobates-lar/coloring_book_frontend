@@ -32,7 +32,7 @@ export default function Home() {
                         <p className="legend">Saguaro National Park</p>
                     </div>
                     <div>
-                        <img src="/yellowstone.jpg" alt="Yellowstone National Park"/>
+                        <img src="/yellowstone.jpeg" alt="Yellowstone National Park"/>
                         <p className="legend">Yellowstone National Park</p>
                     </div>
                     <div>
