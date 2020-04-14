@@ -7,7 +7,7 @@ export default function ImageGallery() {
  
     const dispatch = useDispatch();
     useEffect(() => {
-      fetch("http://localhost:3000/images")
+      fetch("https://color-by-nature-api.herokuapp.com/images")
         .then(r => r.json())
         .then((resp) => {
             dispatch({

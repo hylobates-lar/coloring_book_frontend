@@ -19,7 +19,7 @@ const App = () => {
 
   useEffect(() => {
     if (localStorage.getItem("token")) {
-      fetch("http://localhost:3000/persist", {
+      fetch("https://color-by-nature-api.herokuapp.com/persist", {
         headers: {
           "Authorization": `Bearer ${localStorage.token}`
         }

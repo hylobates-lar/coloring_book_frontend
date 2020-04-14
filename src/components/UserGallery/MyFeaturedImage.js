@@ -21,7 +21,7 @@ export default function MyFeaturedImage(props) {
     }
     
     if (token && !fetched) {
-        fetch(`http://localhost:3000/user_images/${id}`,{
+        fetch(`https://color-by-nature-api.herokuapp.com/user_images/${id}`,{
             headers: {'Authorization': `bearer ${token}`}
         })
         .then(r => r.json())
@@ -53,7 +53,7 @@ export default function MyFeaturedImage(props) {
         })
         .then((willDelete) => {
             if (willDelete) {
-                fetch(`http://localhost:3000/user_images/${id}`,{
+                fetch(`https://color-by-nature-api.herokuapp.com/user_images/${id}`,{
                     method: 'DELETE',
                     headers: {'Authorization': `bearer ${token}`}
                 })

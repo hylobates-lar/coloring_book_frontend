@@ -17,7 +17,7 @@ export default function MyGallery() {
     }
     
     if(token && !fetched){
-        fetch(`http://localhost:3000/user_images`,
+        fetch(`https://color-by-nature-api.herokuapp.com/user_images`,
         {
             headers: {'Authorization': `bearer ${token}`}
         })

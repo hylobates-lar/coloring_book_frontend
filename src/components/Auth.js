@@ -25,7 +25,7 @@ export default function Auth() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form)
         };
-        fetch(`http://localhost:3000/${endpoint}`, config)
+        fetch(`https://color-by-nature-api.herokuapp.com/${endpoint}`, config)
         .then(r => r.json())
         .then(user => {
             if (user.error) {

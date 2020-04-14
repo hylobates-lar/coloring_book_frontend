@@ -18,7 +18,7 @@ export default function ImageCard(props) {
 
         let newImage = {image_id: image.id, user_id: user.id}
 
-        fetch(`http://localhost:3000/user_images`, {
+        fetch(`https://color-by-nature-api.herokuapp.com/user_images`, {
             method: 'POST',
             headers: {
                 'Content-Type':'application/json',
@@ -41,7 +41,7 @@ export default function ImageCard(props) {
     return(
         <div className="image-card">
                 <h4>{image.national_park} National Park</h4>
-                <img className="new-image" src={`http://localhost:3000${image.svg_url}`} />
+                <img className="new-image" src={`https://color-by-nature-api.herokuapp.com${image.svg_url}`} />
                 <button onClick={colorImage}>Color Me!</button>
         </div>
     )
