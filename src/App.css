@@ -498,12 +498,17 @@ input {
         flex-direction: column;
         padding: unset;
         margin: 40px 0;
+        align-items: center;
     }
 
     #coloring-image-container {
         order: 1;
     }
 
+    #coloring-image-container .large {
+        margin-right: auto;
+        margin-left: auto;
+    }
     .color-palette {
         order: 2;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
