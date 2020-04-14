@@ -10,7 +10,7 @@ Ideally I would also love to use this app to provide fundraising support for the
  
  
 ## Screenshot
-![Screenshot](./readme-screenshot.png)
+![Screenshot](public/readme-screenshot.png)
 
 
 ## Features
