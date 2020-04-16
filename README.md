@@ -21,7 +21,7 @@ A user must be logged in to color, and the login will persist until the user cli
 
 A user can:
 
-* log in/create a new account
+* log in/create a new account/log out
 * browse national parks coloring pages in the Image Gallery
 * select colors from the color palette to apply to their chosen image in the Coloring Page
 * save an image to their account (The image saves automatically to their account upon selection, and autosaves as each color is applied.)
