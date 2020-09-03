@@ -1,4 +1,4 @@
-import React, { useEffect, dispatch } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import ImageCard from './ImageCard.js';
 import LoadingSpinner from '../LoadingSpinner.js';
@@ -16,7 +16,7 @@ export default function ImageGallery() {
                 payload: resp
             });
         })  
-    }, []);
+    }, [dispatch]);
 
     const images = useSelector(state => state.image);
 

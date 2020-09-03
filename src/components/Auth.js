@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useHistory } from "react-router-dom";
 import swal from 'sweetalert';
 
 export default function Auth() {
-    const {user} = useSelector(state => state.auth);
     
     const [login, setLogin] = useState(true);
     const [form, setForm] = useState({ username: '', password: '' });

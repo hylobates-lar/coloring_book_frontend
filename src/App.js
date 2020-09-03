@@ -39,7 +39,7 @@ const App = () => {
             }
         })
         }
-    }, []);
+    }, [dispatch]);
 
     return (
         <div className="App">
@@ -60,7 +60,7 @@ const App = () => {
                 </Switch>
             </div>
             <div id="footer">
-                created by <a href="https://github.com/hylobates-lar/coloring_book_frontend">@hylobates-lar</a> // 2020
+                {'created by'} <a href="https://github.com/hylobates-lar/coloring_book_frontend">@hylobates-lar</a> {'// 2020'}
             </div>
         </div>
     )

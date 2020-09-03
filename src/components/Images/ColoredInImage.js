@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Yosemite from './Yosemite';
 import Sequoia from './Sequoia';
 import Yosemite2 from './Yosemite2';
