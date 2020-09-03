@@ -41,7 +41,7 @@ export default function ImageCard(props) {
     return(
         <div className="image-card">
                 <h4>{image.national_park} National Park</h4>
-                <img className="new-image" src={`https://color-by-nature-api.herokuapp.com${image.svg_url}`} />
+                <img alt="coloring image" className="new-image" src={`https://color-by-nature-api.herokuapp.com${image.svg_url}`} />
                 <button onClick={colorImage}>Color Me!</button>
         </div>
     )
