@@ -71,7 +71,7 @@ export default function ColoringPage() {
             <ColorPalette currentColor={color} changeColor={setColor} />
             <div id="coloring-image-container" > 
                 <ColoredInImage size="large" component={userImage.image.component} onFill={onFillColor} fillColors={userImage.fill_colors}/>
-                <p class="auto-save-text" >* This image will save automatically, so color away! <span role='img' alt='thumbs up emoji'>👍</span></p>
+                <p class="auto-save-text" >* This image will save automatically, so color away! <span role='img' aria-label='thumbs up emoji'>👍</span></p>
             </div>
             <div className="image-description">
                 <h2 id="description-heading" >{currentImage.national_park} National Park</h2>
