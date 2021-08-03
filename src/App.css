@@ -18,7 +18,7 @@ body {
 }
   
 .background {
-    background-image: url("https://cdn.visitutah.com/media/15894218/websocial_cedarbreaks_darksky-stock-photo-milky-way-rising-over-cedar-breaks-114906899-4.jpg?anchor=center&mode=crop&width=1140&height=760&rnd=131877744350000000&quality=86");
+    background-image: url('/grsa-milkyway-over-dunes-final-2017-lightened-jpg.jpeg');
     background-size: cover;
     height: 100%;
     position: fixed; 
